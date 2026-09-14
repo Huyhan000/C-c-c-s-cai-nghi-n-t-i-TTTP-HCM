@@ -104,37 +104,15 @@ html {
   background-color: #061e1b !important;
 }
 
-.leaflet-pane {
-  z-index: 5 !important;
-}
-
-.leaflet-tile-pane {
-  z-index: 2 !important;
-}
-
-.leaflet-overlay-pane {
-  z-index: 4 !important;
-}
-
-.leaflet-marker-pane {
-  z-index: 6 !important;
-}
-
-.leaflet-tooltip-pane {
-  z-index: 7 !important;
-}
-
-.leaflet-popup-pane {
-  z-index: 8 !important;
-}
-
-.leaflet-control {
-  z-index: 9 !important;
-}
-
-.leaflet-top,
-.leaflet-bottom {
-  z-index: 10 !important;
+/* HARD LOCK: Completely eliminate transition/animation lag on Leaflet SVG paths, markers & overlays
+   This ensures vectors never drift, lag, or jump out of sync with the base image during pan/zoom */
+.leaflet-pane svg,
+.leaflet-pane svg path,
+.leaflet-marker-icon,
+.leaflet-image-layer {
+  transition: none !important;
+  -webkit-transition: none !important;
+  animation: none !important;
 }
 
 

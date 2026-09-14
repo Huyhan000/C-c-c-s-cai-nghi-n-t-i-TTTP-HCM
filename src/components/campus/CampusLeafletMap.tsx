@@ -62,9 +62,23 @@ export const CampusLeafletMap: React.FC<CampusLeafletMapProps> = ({
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
   const mapInstanceRef = useRef<L.Map | null>(null);
   const layerGroupRef = useRef<L.LayerGroup | null>(null);
+  const svgRendererRef = useRef<L.SVG | null>(null);
   const campusAreaLayerRef = useRef<L.Polygon | null>(null);
   const imageOverlayRef = useRef<L.ImageOverlay | null>(null);
   const polygonLayersMapRef = useRef<Map<string, L.Polygon>>(new Map());
+  const markerLayersMapRef = useRef<Map<string, L.Marker>>(new Map());
+  const selectedLocationIdRef = useRef<string | null>(selectedLocationId);
+  const prevSelectedLocationIdRef = useRef<string | null>(null);
+  const hoveredLocationIdRef = useRef<string | null>(hoveredLocationId);
+
+  // Keep refs up to date for event handlers
+  useEffect(() => {
+    selectedLocationIdRef.current = selectedLocationId;
+  }, [selectedLocationId]);
+
+  useEffect(() => {
+    hoveredLocationIdRef.current = hoveredLocationId;
+  }, [hoveredLocationId]);
 
   const categoryMap = new Map<string, Category>(categories.map((c) => [c.id, c]));
 
@@ -106,12 +120,19 @@ export const CampusLeafletMap: React.FC<CampusLeafletMapProps> = ({
     // Tight 4% margin: strictly prevents panning out into empty space!
     const paddedBounds = bounds.pad(0.04);
 
+    // Dedicated high-padding SVG renderer to prevent vector viewport shifts during panning
+    const svgRenderer = L.svg({ padding: 2.0 });
+    svgRendererRef.current = svgRenderer;
+
     const map = L.map(mapContainerRef.current, {
       crs: L.CRS.Simple,
+      renderer: svgRenderer,
       minZoom: -2, // Temporary, will be locked to fitZoom right after fitBounds
       maxZoom: 3,
-      zoomSnap: 0.1,
-      zoomDelta: 0.4,
+      zoomSnap: 0.25,
+      zoomDelta: 0.5,
+      wheelPxPerZoomLevel: 100,
+      wheelDebounceTime: 40,
       scrollWheelZoom: true,
       touchZoom: true,
       doubleClickZoom: true,
@@ -185,6 +206,7 @@ export const CampusLeafletMap: React.FC<CampusLeafletMapProps> = ({
         toLeafletCoord(x, y, campus.image_height)
       );
       const boundaryLayer = L.polygon(boundaryLatLngs, {
+        renderer: svgRendererRef.current || undefined,
         color: '#10b981',
         weight: 2.5,
         dashArray: '6, 6',
@@ -195,7 +217,8 @@ export const CampusLeafletMap: React.FC<CampusLeafletMapProps> = ({
     }
   }, [campus.campus_area, campus.image_height]);
 
-  // Render Locations (Polygons + Markers + Hover Popups)
+  // Render Locations (Polygons + Markers + Popups)
+  // STABLE: Does NOT depend on hoveredLocationId or selectedLocationId so layers are NEVER cleared on hover/move
   useEffect(() => {
     const map = mapInstanceRef.current;
     const layerGroup = layerGroupRef.current;
@@ -203,14 +226,14 @@ export const CampusLeafletMap: React.FC<CampusLeafletMapProps> = ({
 
     layerGroup.clearLayers();
     polygonLayersMapRef.current.clear();
+    markerLayersMapRef.current.clear();
 
     const visibleLocs = locations.filter((loc) => activeCategoryIds.includes(loc.category_id));
 
     visibleLocs.forEach((loc) => {
       const cat = categoryMap.get(loc.category_id);
       const color = cat?.color || '#10b981';
-      const isSelected = loc.id === selectedLocationId;
-      const isHovered = loc.id === hoveredLocationId;
+      const isSelected = loc.id === selectedLocationIdRef.current;
       const images = getLocationImages(loc.id);
       const coverImage = images[0]?.image_url;
 
@@ -219,11 +242,12 @@ export const CampusLeafletMap: React.FC<CampusLeafletMapProps> = ({
         const latLngs = loc.polygon.map(([x, y]) => toLeafletCoord(x, y, campus.image_height));
 
         const polygon = L.polygon(latLngs, {
-          color: isSelected ? '#ffffff' : isHovered ? '#34d399' : color,
-          weight: isSelected ? 4 : isHovered ? 3 : 2,
+          renderer: svgRendererRef.current || undefined,
+          color: isSelected ? '#ffffff' : color,
+          weight: isSelected ? 4 : 2,
           fillColor: color,
-          fillOpacity: isSelected ? 0.65 : isHovered ? 0.55 : 0.35,
-          className: `location-polygon-${loc.id} cursor-pointer transition-all`,
+          fillOpacity: isSelected ? 0.65 : 0.35,
+          className: `location-polygon-${loc.id} cursor-pointer`,
         });
 
         // Hover Tooltip
@@ -264,21 +288,28 @@ export const CampusLeafletMap: React.FC<CampusLeafletMapProps> = ({
           opacity: 1,
         });
 
-        // Event listeners
+        // In-place event listeners: ZERO DOM destruction on hover!
         polygon.on('mouseover', () => {
           onHoverLocation(loc.id);
-          polygon.setStyle({
-            weight: 3.5,
-            fillOpacity: 0.6,
-          });
+          if (loc.id !== selectedLocationIdRef.current) {
+            polygon.setStyle({
+              weight: 3.5,
+              fillOpacity: 0.6,
+              color: '#34d399',
+            });
+            polygon.bringToFront();
+          }
         });
 
         polygon.on('mouseout', () => {
           onHoverLocation(null);
-          polygon.setStyle({
-            weight: isSelected ? 4 : 2,
-            fillOpacity: isSelected ? 0.65 : 0.35,
-          });
+          if (loc.id !== selectedLocationIdRef.current) {
+            polygon.setStyle({
+              weight: 2,
+              fillOpacity: 0.35,
+              color: color,
+            });
+          }
         });
 
         polygon.on('click', (e) => {
@@ -297,14 +328,11 @@ export const CampusLeafletMap: React.FC<CampusLeafletMapProps> = ({
           : toLeafletCoord(loc.pos_x, loc.pos_y, campus.image_height);
 
       const markerHtml = `
-        <div class="group relative flex items-center justify-center transition-transform hover:scale-125 cursor-pointer">
+        <div id="marker-pill-${loc.id}" class="marker-pill-container cursor-pointer flex items-center justify-center">
           <div 
-            class="flex items-center justify-center w-8 h-8 rounded-full text-white font-black text-xs shadow-2xl transition-all ${
-              isSelected
-                ? 'ring-4 ring-white scale-125 shadow-emerald-500/50'
-                : isHovered
-                ? 'ring-2 ring-emerald-300 scale-115'
-                : 'ring-2 ring-white/90'
+            id="marker-badge-${loc.id}"
+            class="flex items-center justify-center w-8 h-8 rounded-full text-white font-black text-xs shadow-xl ${
+              isSelected ? 'ring-4 ring-white shadow-emerald-500/50' : 'ring-2 ring-white/90'
             }"
             style="background-color: ${color};"
           >
@@ -338,18 +366,93 @@ export const CampusLeafletMap: React.FC<CampusLeafletMapProps> = ({
       marker.on('mouseout', () => onHoverLocation(null));
 
       marker.addTo(layerGroup);
+      markerLayersMapRef.current.set(loc.id, marker);
     });
   }, [
+    campus.id,
+    campus.image_url,
+    campus.image_width,
+    campus.image_height,
     locations,
     categories,
     activeCategoryIds,
-    selectedLocationId,
-    hoveredLocationId,
-    campus.image_height,
     getLocationImages,
     onSelectLocation,
     onHoverLocation,
   ]);
+
+  // In-place highlight updates for Selected Location (Zero layer recreation!)
+  useEffect(() => {
+    const prevId = prevSelectedLocationIdRef.current;
+    if (prevId && prevId !== selectedLocationId) {
+      // Revert previous polygon
+      const prevPoly = polygonLayersMapRef.current.get(prevId);
+      if (prevPoly) {
+        const prevLoc = locations.find((l) => l.id === prevId);
+        const prevCat = prevLoc ? categoryMap.get(prevLoc.category_id) : null;
+        prevPoly.setStyle({
+          color: prevCat?.color || '#10b981',
+          weight: 2,
+          fillOpacity: 0.35,
+        });
+      }
+      // Revert previous marker ring
+      const prevBadge = document.getElementById(`marker-badge-${prevId}`);
+      if (prevBadge) {
+        prevBadge.classList.remove('ring-4', 'ring-white', 'shadow-emerald-500/50');
+        prevBadge.classList.add('ring-2', 'ring-white/90');
+      }
+    }
+
+    if (selectedLocationId) {
+      // Highlight new polygon
+      const newPoly = polygonLayersMapRef.current.get(selectedLocationId);
+      if (newPoly) {
+        newPoly.setStyle({
+          color: '#ffffff',
+          weight: 4,
+          fillOpacity: 0.65,
+        });
+        newPoly.bringToFront();
+      }
+      // Highlight new marker ring
+      const newBadge = document.getElementById(`marker-badge-${selectedLocationId}`);
+      if (newBadge) {
+        newBadge.classList.remove('ring-2', 'ring-white/90');
+        newBadge.classList.add('ring-4', 'ring-white', 'shadow-emerald-500/50');
+      }
+    }
+
+    prevSelectedLocationIdRef.current = selectedLocationId;
+  }, [selectedLocationId, locations, categoryMap]);
+
+  // In-place highlight updates for Hovered Location triggered from sidebar
+  useEffect(() => {
+    if (!hoveredLocationId || hoveredLocationId === selectedLocationId) return;
+
+    const poly = polygonLayersMapRef.current.get(hoveredLocationId);
+    if (poly) {
+      poly.setStyle({
+        weight: 3.5,
+        fillOpacity: 0.6,
+        color: '#34d399',
+      });
+      poly.bringToFront();
+    }
+
+    return () => {
+      if (poly && hoveredLocationId !== selectedLocationIdRef.current) {
+        const loc = locations.find((l) => l.id === hoveredLocationId);
+        const cat = loc ? categoryMap.get(loc.category_id) : null;
+        poly.setStyle({
+          weight: 2,
+          fillOpacity: 0.35,
+          color: cat?.color || '#10b981',
+        });
+      }
+    };
+  }, [hoveredLocationId, selectedLocationId, locations, categoryMap]);
+
 
   // Center on Selected Location with contextual zoom (gentle, not over-zooming)
   useEffect(() => {

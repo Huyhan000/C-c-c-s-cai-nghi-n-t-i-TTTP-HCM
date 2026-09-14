@@ -1,0 +1,7 @@
+{
+  "name": "Bản đồ cơ sở hỗ trợ TP.HCM",
+  "description": "Bản đồ quy hoạch tổng thể khuôn viên cơ sở, tra cứu phân khu chi tiết, xem bộ ảnh con trực quan và hệ thống quản trị cập nhật ảnh theo thời gian thực.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

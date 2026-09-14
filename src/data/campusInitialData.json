@@ -1,0 +1,3895 @@
+{
+  "campuses": [
+    {
+      "id": "a4937b14-fd54-4f06-b622-491431cce674",
+      "name": "Cơ sở cai nghiện số 6",
+      "slug": "co-so-6",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/campus-images/19ab5922-474a-474c-ad76-9457004f867f.jpg",
+      "image_width": 6000,
+      "image_height": 5620,
+      "sort_order": 6,
+      "created_at": "2026-09-14T03:45:08.050348+00:00",
+      "campus_area": [
+        [
+          1839,
+          1282
+        ],
+        [
+          2570,
+          1219
+        ],
+        [
+          3594,
+          1247
+        ],
+        [
+          4381,
+          1346
+        ],
+        [
+          4746,
+          3294
+        ],
+        [
+          3885,
+          3365
+        ],
+        [
+          3875,
+          3444
+        ],
+        [
+          3515,
+          3479
+        ],
+        [
+          3601,
+          4625
+        ],
+        [
+          2506,
+          4651
+        ],
+        [
+          2506,
+          3454
+        ],
+        [
+          1561,
+          3355
+        ],
+        [
+          1523,
+          3304
+        ],
+        [
+          1839,
+          1282
+        ]
+      ],
+      "is_visible": true
+    },
+    {
+      "id": "a1f88f50-e7b0-48d0-8ad5-182c0ee7f4f6",
+      "name": "Cơ sở cai nghiện số 3 - Phân khu Bố Lá",
+      "slug": "bo-la",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/campus-images/bf659d05-1628-4f29-893b-7205fe81b8af.jpg",
+      "image_width": 5272,
+      "image_height": 2962,
+      "sort_order": 3,
+      "created_at": "2026-09-14T03:15:46.375501+00:00",
+      "campus_area": [
+        [
+          1706,
+          1211
+        ],
+        [
+          1837,
+          1186
+        ],
+        [
+          1839,
+          1131
+        ],
+        [
+          2363,
+          1034
+        ],
+        [
+          2378,
+          1070
+        ],
+        [
+          2621,
+          1025
+        ],
+        [
+          2622,
+          1018
+        ],
+        [
+          2642,
+          1008
+        ],
+        [
+          2643,
+          991
+        ],
+        [
+          2635,
+          986
+        ],
+        [
+          2636,
+          978
+        ],
+        [
+          2653,
+          973
+        ],
+        [
+          2659,
+          967
+        ],
+        [
+          2669,
+          971
+        ],
+        [
+          2682,
+          980
+        ],
+        [
+          2684,
+          990
+        ],
+        [
+          2681,
+          995
+        ],
+        [
+          2679,
+          1011
+        ],
+        [
+          2695,
+          1026
+        ],
+        [
+          2712,
+          1050
+        ],
+        [
+          2745,
+          1040
+        ],
+        [
+          2798,
+          1076
+        ],
+        [
+          2819,
+          1063
+        ],
+        [
+          2833,
+          1068
+        ],
+        [
+          2834,
+          1095
+        ],
+        [
+          2849,
+          1108
+        ],
+        [
+          2921,
+          1191
+        ],
+        [
+          4124,
+          1995
+        ],
+        [
+          4124,
+          2030
+        ],
+        [
+          3773,
+          2172
+        ],
+        [
+          3404,
+          2342
+        ],
+        [
+          3263,
+          2401
+        ],
+        [
+          3217,
+          2373
+        ],
+        [
+          3141,
+          2379
+        ],
+        [
+          3102,
+          2415
+        ],
+        [
+          3086,
+          2476
+        ],
+        [
+          2932,
+          2525
+        ],
+        [
+          2856,
+          2554
+        ],
+        [
+          1940,
+          1544
+        ],
+        [
+          1807,
+          1379
+        ],
+        [
+          1706,
+          1211
+        ]
+      ],
+      "is_visible": true
+    },
+    {
+      "id": "8d47ac97-1b5c-44bd-bf59-de64e74611d4",
+      "name": "Cơ sở cai nghiện số 1",
+      "slug": "co-so-1",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/campus-images/dc93fdce-e4fc-419f-bd24-7e526df36f5c.jpg",
+      "image_width": 4032,
+      "image_height": 3024,
+      "sort_order": 1,
+      "created_at": "2026-09-11T01:50:14.982805+00:00",
+      "campus_area": [
+        [
+          1228,
+          295
+        ],
+        [
+          2832,
+          424
+        ],
+        [
+          3697,
+          3021
+        ],
+        [
+          2391,
+          2933
+        ],
+        [
+          764,
+          2598
+        ],
+        [
+          41,
+          2448
+        ],
+        [
+          5,
+          2433
+        ],
+        [
+          21,
+          1720
+        ]
+      ],
+      "is_visible": true
+    },
+    {
+      "id": "2d39d975-007c-425b-bf38-1457bc7119a1",
+      "name": "Cơ sở cai nghiện số 2",
+      "slug": "co-so-2",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/campus-images/833e406d-23bd-4d11-86ed-f45ecab0a2cc.jpg",
+      "image_width": 1672,
+      "image_height": 941,
+      "sort_order": 2,
+      "created_at": "2026-09-14T02:52:03.060588+00:00",
+      "campus_area": [
+        [
+          211,
+          191
+        ],
+        [
+          439,
+          179
+        ],
+        [
+          397,
+          315
+        ],
+        [
+          1046,
+          233
+        ],
+        [
+          1177,
+          198
+        ],
+        [
+          1244,
+          178
+        ],
+        [
+          1668,
+          294
+        ],
+        [
+          1666,
+          433
+        ],
+        [
+          887,
+          604
+        ],
+        [
+          582,
+          687
+        ],
+        [
+          390,
+          723
+        ],
+        [
+          380,
+          427
+        ],
+        [
+          358,
+          304
+        ]
+      ],
+      "is_visible": true
+    },
+    {
+      "id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75",
+      "name": "Cơ sở cai nghiện số 4",
+      "slug": "co-so-4",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/campus-images/11de4c7f-0e3c-40db-b5c5-02f802d7bd07.jpg",
+      "image_width": 6000,
+      "image_height": 4500,
+      "sort_order": 4,
+      "created_at": "2026-09-12T17:52:15.557006+00:00",
+      "campus_area": null,
+      "is_visible": true
+    },
+    {
+      "id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "name": "Cơ sở cai nghiện số 5",
+      "slug": "z",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/campus-images/19a3707e-2b2f-4e45-83a5-94acfe520af0.JPG",
+      "image_width": 8192,
+      "image_height": 4608,
+      "sort_order": 5,
+      "created_at": "2026-09-10T20:14:41.789117+00:00",
+      "campus_area": [
+        [
+          1541,
+          4562
+        ],
+        [
+          2583,
+          2258
+        ],
+        [
+          3610,
+          1814
+        ],
+        [
+          4304,
+          1835
+        ],
+        [
+          4395,
+          1564
+        ],
+        [
+          2249,
+          1522
+        ],
+        [
+          2687,
+          1182
+        ],
+        [
+          4193,
+          1078
+        ],
+        [
+          3881,
+          953
+        ],
+        [
+          4027,
+          884
+        ],
+        [
+          4832,
+          1293
+        ],
+        [
+          4756,
+          1821
+        ],
+        [
+          5262,
+          2022
+        ],
+        [
+          5478,
+          2432
+        ],
+        [
+          6005,
+          3730
+        ],
+        [
+          6276,
+          4347
+        ],
+        [
+          6401,
+          4604
+        ],
+        [
+          1541,
+          4562
+        ]
+      ],
+      "is_visible": true
+    }
+  ],
+  "categories": [
+    {
+      "id": "62489757-de9f-4e13-b010-816b7c1be357",
+      "name": "Bãi đỗ xe",
+      "color": "#5b6b73"
+    },
+    {
+      "id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Các khu",
+      "color": "#ff0000"
+    },
+    {
+      "id": "983d44a8-8079-42f5-b162-2fa1077ce358",
+      "name": "Hạng mục mở rộng",
+      "color": "#ffd500"
+    }
+  ],
+  "locations": [
+    {
+      "id": "a28bf159-c01c-4793-863f-e306365956e7",
+      "campus_id": "8d47ac97-1b5c-44bd-bf59-de64e74611d4",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Trung tâm giáo dục thường xuyên",
+      "description": null,
+      "pos_x": 330,
+      "pos_y": 1928,
+      "created_at": "2026-09-14T04:48:03.082896+00:00",
+      "polygon": [
+        [
+          288,
+          1627
+        ],
+        [
+          19,
+          1993
+        ],
+        [
+          10,
+          2142
+        ],
+        [
+          269,
+          2239
+        ],
+        [
+          405,
+          2168
+        ],
+        [
+          644,
+          1676
+        ],
+        [
+          631,
+          1650
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 1
+    },
+    {
+      "id": "406d78df-7735-4400-89aa-20a8edeae8b9",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu Chăn nuôi heo",
+      "description": "dsadasdas",
+      "pos_x": 2300,
+      "pos_y": 3909,
+      "created_at": "2026-09-10T20:44:59.800398+00:00",
+      "polygon": [
+        [
+          2224,
+          3797
+        ],
+        [
+          2471,
+          3799
+        ],
+        [
+          2428,
+          3990
+        ],
+        [
+          2150,
+          3980
+        ]
+      ],
+      "custom_fields": [
+        {
+          "label": "Địa chỉ",
+          "value": "dsadsa"
+        },
+        {
+          "label": "Điện thoại",
+          "value": "dsadsad"
+        },
+        {
+          "label": "Website",
+          "value": "dsadasd"
+        }
+      ],
+      "manager_id": null,
+      "display_number": 1
+    },
+    {
+      "id": "eda30d70-c4b1-4191-b828-8223da3537d7",
+      "campus_id": "8d47ac97-1b5c-44bd-bf59-de64e74611d4",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Sân bóng đá",
+      "description": "Sân bóng đá",
+      "pos_x": 1353,
+      "pos_y": 1361,
+      "created_at": "2026-09-14T05:26:31.989055+00:00",
+      "polygon": [
+        [
+          1293,
+          1265
+        ],
+        [
+          1522,
+          1277
+        ],
+        [
+          1441,
+          1549
+        ],
+        [
+          1174,
+          1544
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 2
+    },
+    {
+      "id": "e8f0b3c9-a256-4957-b250-6c8904065169",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu kỷ luật học viên",
+      "description": "Khu kỷ luật học viên",
+      "pos_x": 5516,
+      "pos_y": 2341,
+      "created_at": "2026-09-10T22:24:32.809841+00:00",
+      "polygon": [
+        [
+          5351,
+          2299
+        ],
+        [
+          5546,
+          2305
+        ],
+        [
+          5597,
+          2377
+        ],
+        [
+          5602,
+          2435
+        ],
+        [
+          5485,
+          2464
+        ],
+        [
+          5455,
+          2467
+        ],
+        [
+          5434,
+          2373
+        ],
+        [
+          5415,
+          2334
+        ],
+        [
+          5365,
+          2350
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 3
+    },
+    {
+      "id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu quản lý học viên số 4",
+      "description": null,
+      "pos_x": 2913,
+      "pos_y": 2965,
+      "created_at": "2026-09-10T21:19:24.318852+00:00",
+      "polygon": [
+        [
+          3050,
+          2602
+        ],
+        [
+          3154,
+          2598
+        ],
+        [
+          3029,
+          3042
+        ],
+        [
+          2523,
+          3064
+        ],
+        [
+          2637,
+          2733
+        ],
+        [
+          2758,
+          2726
+        ],
+        [
+          3008,
+          2745
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 13
+    },
+    {
+      "id": "a8191ac6-36ee-482c-b286-b97c13ea10c7",
+      "campus_id": "8d47ac97-1b5c-44bd-bf59-de64e74611d4",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu Quản lý - Giáo dục học viên số 4",
+      "description": null,
+      "pos_x": 1688,
+      "pos_y": 2170,
+      "created_at": "2026-09-14T05:30:26.67687+00:00",
+      "polygon": [
+        [
+          1663,
+          1915
+        ],
+        [
+          1629,
+          1993
+        ],
+        [
+          1500,
+          1993
+        ],
+        [
+          1468,
+          2153
+        ],
+        [
+          1334,
+          2611
+        ],
+        [
+          2144,
+          2715
+        ],
+        [
+          2179,
+          1915
+        ],
+        [
+          2029,
+          1908
+        ],
+        [
+          1978,
+          1904
+        ],
+        [
+          1975,
+          1877
+        ],
+        [
+          1931,
+          1874
+        ],
+        [
+          1917,
+          1901
+        ],
+        [
+          1873,
+          1898
+        ],
+        [
+          1819,
+          1895
+        ],
+        [
+          1804,
+          1904
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 3
+    },
+    {
+      "id": "2ea83894-c6f2-46d5-bd3c-9aef05442ddc",
+      "campus_id": "2d39d975-007c-425b-bf38-1457bc7119a1",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu 1",
+      "description": null,
+      "pos_x": 365,
+      "pos_y": 198,
+      "created_at": "2026-09-14T03:01:04.215371+00:00",
+      "polygon": [
+        [
+          217,
+          193
+        ],
+        [
+          443,
+          175
+        ],
+        [
+          426,
+          201
+        ],
+        [
+          397,
+          219
+        ],
+        [
+          361,
+          216
+        ],
+        [
+          343,
+          201
+        ],
+        [
+          299,
+          206
+        ],
+        [
+          248,
+          205
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 1
+    },
+    {
+      "id": "8890d4e3-b3dd-434a-bdf9-db1eb0279dae",
+      "campus_id": "2d39d975-007c-425b-bf38-1457bc7119a1",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu 3",
+      "description": null,
+      "pos_x": 559,
+      "pos_y": 352,
+      "created_at": "2026-09-14T03:02:27.778257+00:00",
+      "polygon": [
+        [
+          456,
+          298
+        ],
+        [
+          642,
+          275
+        ],
+        [
+          659,
+          285
+        ],
+        [
+          663,
+          299
+        ],
+        [
+          648,
+          301
+        ],
+        [
+          687,
+          343
+        ],
+        [
+          695,
+          362
+        ],
+        [
+          696,
+          378
+        ],
+        [
+          692,
+          387
+        ],
+        [
+          661,
+          391
+        ],
+        [
+          647,
+          373
+        ],
+        [
+          639,
+          384
+        ],
+        [
+          622,
+          391
+        ],
+        [
+          610,
+          405
+        ],
+        [
+          596,
+          402
+        ],
+        [
+          583,
+          400
+        ],
+        [
+          569,
+          386
+        ],
+        [
+          562,
+          402
+        ],
+        [
+          544,
+          401
+        ],
+        [
+          535,
+          381
+        ],
+        [
+          505,
+          374
+        ],
+        [
+          494,
+          377
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 2
+    },
+    {
+      "id": "04ed4f8e-2ba6-4dd7-931e-8ed6d79c0ecc",
+      "campus_id": "2d39d975-007c-425b-bf38-1457bc7119a1",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu 4",
+      "description": null,
+      "pos_x": 740,
+      "pos_y": 281,
+      "created_at": "2026-09-14T03:08:03.281228+00:00",
+      "polygon": [
+        [
+          696,
+          270
+        ],
+        [
+          852,
+          251
+        ],
+        [
+          876,
+          265
+        ],
+        [
+          895,
+          276
+        ],
+        [
+          913,
+          290
+        ],
+        [
+          922,
+          298
+        ],
+        [
+          910,
+          317
+        ],
+        [
+          898,
+          324
+        ],
+        [
+          892,
+          296
+        ],
+        [
+          878,
+          284
+        ],
+        [
+          864,
+          281
+        ],
+        [
+          855,
+          284
+        ],
+        [
+          850,
+          273
+        ],
+        [
+          835,
+          267
+        ],
+        [
+          832,
+          288
+        ],
+        [
+          828,
+          296
+        ],
+        [
+          838,
+          309
+        ],
+        [
+          826,
+          310
+        ],
+        [
+          815,
+          298
+        ],
+        [
+          810,
+          289
+        ],
+        [
+          795,
+          289
+        ],
+        [
+          784,
+          293
+        ],
+        [
+          779,
+          285
+        ],
+        [
+          779,
+          276
+        ],
+        [
+          771,
+          269
+        ],
+        [
+          768,
+          284
+        ],
+        [
+          765,
+          293
+        ],
+        [
+          762,
+          298
+        ],
+        [
+          759,
+          309
+        ],
+        [
+          756,
+          321
+        ],
+        [
+          753,
+          338
+        ],
+        [
+          729,
+          321
+        ],
+        [
+          703,
+          301
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 3
+    },
+    {
+      "id": "16dbdad4-ce74-435e-b107-35d0c58ac3dc",
+      "campus_id": "2d39d975-007c-425b-bf38-1457bc7119a1",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu 6",
+      "description": null,
+      "pos_x": 1107,
+      "pos_y": 311,
+      "created_at": "2026-09-14T03:07:00.567414+00:00",
+      "polygon": [
+        [
+          1005,
+          300
+        ],
+        [
+          1158,
+          281
+        ],
+        [
+          1252,
+          325
+        ],
+        [
+          1212,
+          323
+        ],
+        [
+          1193,
+          321
+        ],
+        [
+          1187,
+          312
+        ],
+        [
+          1171,
+          315
+        ],
+        [
+          1168,
+          330
+        ],
+        [
+          1135,
+          335
+        ],
+        [
+          1117,
+          340
+        ],
+        [
+          1104,
+          335
+        ],
+        [
+          1099,
+          327
+        ],
+        [
+          1089,
+          344
+        ],
+        [
+          1075,
+          341
+        ],
+        [
+          1064,
+          328
+        ],
+        [
+          1051,
+          329
+        ],
+        [
+          1029,
+          325
+        ],
+        [
+          1033,
+          314
+        ],
+        [
+          1018,
+          302
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 4
+    },
+    {
+      "id": "b43abe2c-74d6-4dc3-96e7-7e614d05f589",
+      "campus_id": "2d39d975-007c-425b-bf38-1457bc7119a1",
+      "category_id": null,
+      "name": "Khu 7",
+      "description": null,
+      "pos_x": 1002,
+      "pos_y": 261,
+      "created_at": "2026-09-14T03:09:59.848005+00:00",
+      "polygon": [
+        [
+          911,
+          249
+        ],
+        [
+          1052,
+          232
+        ],
+        [
+          1135,
+          274
+        ],
+        [
+          979,
+          295
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 5
+    },
+    {
+      "id": "f3969321-98e1-4beb-b28a-0ebda6a73c15",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu giáo dục",
+      "description": "Khu giáo dục",
+      "pos_x": 3392,
+      "pos_y": 2056,
+      "created_at": "2026-09-10T22:15:24.635412+00:00",
+      "polygon": [
+        [
+          3351,
+          2015
+        ],
+        [
+          3347,
+          2062
+        ],
+        [
+          3406,
+          2074
+        ],
+        [
+          3434,
+          2082
+        ],
+        [
+          3463,
+          2075
+        ],
+        [
+          3503,
+          2073
+        ],
+        [
+          3516,
+          2022
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 2
+    },
+    {
+      "id": "30de188b-1055-4084-9d2a-620094a6af4d",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu làm việc, tiếp dân",
+      "description": "Khu làm việc, tiếp dân",
+      "pos_x": 3992,
+      "pos_y": 1799,
+      "created_at": "2026-09-10T22:19:47.30424+00:00",
+      "polygon": [
+        [
+          3916,
+          1785
+        ],
+        [
+          3985,
+          1755
+        ],
+        [
+          4038,
+          1757
+        ],
+        [
+          4113,
+          1806
+        ],
+        [
+          3986,
+          1820
+        ],
+        [
+          3923,
+          1822
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 4
+    },
+    {
+      "id": "a8e115bc-273f-49d5-b4a4-41ca951162b8",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu nấu ăn",
+      "description": "Khu nấu ăn",
+      "pos_x": 3739,
+      "pos_y": 1826,
+      "created_at": "2026-09-10T22:18:34.658123+00:00",
+      "polygon": [
+        [
+          3695,
+          1815
+        ],
+        [
+          3771,
+          1798
+        ],
+        [
+          3787,
+          1807
+        ],
+        [
+          3787,
+          1849
+        ],
+        [
+          3780,
+          1860
+        ],
+        [
+          3721,
+          1859
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 5
+    },
+    {
+      "id": "40051414-8e48-473d-aae6-2b0119f298b7",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu nhà ở CBCS PC04",
+      "description": "Khu nhà ở CBCS PC04",
+      "pos_x": 4336,
+      "pos_y": 1879,
+      "created_at": "2026-09-10T22:25:12.080944+00:00",
+      "polygon": [
+        [
+          4300,
+          1841
+        ],
+        [
+          4366,
+          1842
+        ],
+        [
+          4368,
+          1894
+        ],
+        [
+          4299,
+          1897
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 6
+    },
+    {
+      "id": "6d3d094e-c078-4a91-b5c0-7fa77adb5293",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu nhà ở CBCS PK02",
+      "description": "Khu nhà ở CBCS PK02",
+      "pos_x": 4515,
+      "pos_y": 1851,
+      "created_at": "2026-09-10T22:27:30.154276+00:00",
+      "polygon": [
+        [
+          4453,
+          1799
+        ],
+        [
+          4573,
+          1813
+        ],
+        [
+          4580,
+          1893
+        ],
+        [
+          4519,
+          1906
+        ],
+        [
+          4472,
+          1904
+        ],
+        [
+          4433,
+          1900
+        ],
+        [
+          4405,
+          1893
+        ],
+        [
+          4414,
+          1827
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 7
+    },
+    {
+      "id": "eec5d3e5-88d1-4196-88fb-b956ca031626",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu nhà ở lực lượng an ninh thanh niên xung phong",
+      "description": "Khu nhà ở lực lượng an ninh thanh niên xung phong",
+      "pos_x": 4228,
+      "pos_y": 2219,
+      "created_at": "2026-09-10T22:21:39.754387+00:00",
+      "polygon": [
+        [
+          4185,
+          2164
+        ],
+        [
+          4187,
+          2304
+        ],
+        [
+          4263,
+          2304
+        ],
+        [
+          4254,
+          2176
+        ],
+        [
+          4249,
+          2160
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 8
+    },
+    {
+      "id": "b8bae628-3c45-4297-8fa6-538bb3cece64",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu nuôi gà",
+      "description": null,
+      "pos_x": 2545,
+      "pos_y": 3376,
+      "created_at": "2026-09-10T21:14:34.478627+00:00",
+      "polygon": [
+        [
+          2468,
+          3134
+        ],
+        [
+          2826,
+          3134
+        ],
+        [
+          2821,
+          3261
+        ],
+        [
+          2742,
+          3484
+        ],
+        [
+          2686,
+          3624
+        ],
+        [
+          2297,
+          3632
+        ],
+        [
+          2332,
+          3490
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 9
+    },
+    {
+      "id": "4d32deb1-91e1-4bc3-ae3b-a52a5e0f4883",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu quản lý học viên số 1",
+      "description": "Khu quản lý học viên số 1",
+      "pos_x": 3639,
+      "pos_y": 2340,
+      "created_at": "2026-09-10T21:53:48.251499+00:00",
+      "polygon": [
+        [
+          3494,
+          2176
+        ],
+        [
+          3445,
+          2384
+        ],
+        [
+          3867,
+          2391
+        ],
+        [
+          3875,
+          2239
+        ],
+        [
+          3817,
+          2225
+        ],
+        [
+          3810,
+          2192
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": "233acb11-fb6c-4009-89e2-5f009e303e65",
+      "display_number": 10
+    },
+    {
+      "id": "ec6bf123-c195-4ff0-a0d0-e491798be38b",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu quản lý học viên số 2",
+      "description": "Khu quản lý học viên số 1",
+      "pos_x": 3101,
+      "pos_y": 2353,
+      "created_at": "2026-09-10T21:55:51.813694+00:00",
+      "polygon": [
+        [
+          2862,
+          2241
+        ],
+        [
+          2822,
+          2375
+        ],
+        [
+          3045,
+          2399
+        ],
+        [
+          3243,
+          2403
+        ],
+        [
+          3280,
+          2254
+        ],
+        [
+          3275,
+          2186
+        ],
+        [
+          3188,
+          2180
+        ],
+        [
+          3010,
+          2195
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 11
+    },
+    {
+      "id": "4be05dad-7f6d-48b7-82ea-10458a604037",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu quản lý học viên số 3",
+      "description": "thông tin:",
+      "pos_x": 3458,
+      "pos_y": 2948,
+      "created_at": "2026-09-10T21:51:01.7269+00:00",
+      "polygon": [
+        [
+          3394,
+          2595
+        ],
+        [
+          3882,
+          2601
+        ],
+        [
+          3801,
+          3003
+        ],
+        [
+          3312,
+          3025
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 12
+    },
+    {
+      "id": "dc65f9a6-5fe4-48c6-9758-45b93e39e1d2",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu quản lý học viên số 5",
+      "description": "Khu quản lý học viên số 5",
+      "pos_x": 4994,
+      "pos_y": 2244,
+      "created_at": "2026-09-10T22:23:47.81062+00:00",
+      "polygon": [
+        [
+          4705,
+          2186
+        ],
+        [
+          4731,
+          2320
+        ],
+        [
+          5320,
+          2334
+        ],
+        [
+          5262,
+          2170
+        ],
+        [
+          5001,
+          2177
+        ],
+        [
+          4979,
+          2175
+        ],
+        [
+          4966,
+          2157
+        ],
+        [
+          4934,
+          2158
+        ],
+        [
+          4927,
+          2175
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 14
+    },
+    {
+      "id": "f0c90947-cb01-4e1b-ab25-646ff4923c60",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu quản lý học viên số 6",
+      "description": "Khu quản lý học viên số 6",
+      "pos_x": 4043,
+      "pos_y": 1318,
+      "created_at": "2026-09-10T22:31:19.678951+00:00",
+      "polygon": [
+        [
+          3950,
+          1250
+        ],
+        [
+          3981,
+          1383
+        ],
+        [
+          4254,
+          1394
+        ],
+        [
+          4205,
+          1251
+        ],
+        [
+          4133,
+          1241
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 15
+    },
+    {
+      "id": "f74f037f-359b-47b9-9084-77407f95efc6",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu quản lý học viên số 7",
+      "description": "Khu quản lý học viên số 7",
+      "pos_x": 3433,
+      "pos_y": 1338,
+      "created_at": "2026-09-10T22:29:54.19126+00:00",
+      "polygon": [
+        [
+          3299,
+          1245
+        ],
+        [
+          3272,
+          1396
+        ],
+        [
+          3561,
+          1407
+        ],
+        [
+          3548,
+          1248
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 16
+    },
+    {
+      "id": "e25d1d31-eb33-44fa-83c1-d291c448b676",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu quản lý học viên số 8",
+      "description": "Khu quản lý học viên số 8",
+      "pos_x": 3073,
+      "pos_y": 1313,
+      "created_at": "2026-09-10T22:29:02.269979+00:00",
+      "polygon": [
+        [
+          2970,
+          1250
+        ],
+        [
+          3215,
+          1245
+        ],
+        [
+          3206,
+          1387
+        ],
+        [
+          2951,
+          1405
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 17
+    },
+    {
+      "id": "37cd2a93-0a4d-4fbd-a075-f7f1607241f2",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu tăng gia sản xuất - trồng rau",
+      "description": "Khu tăng gia sản xuất - trồng rau",
+      "pos_x": 4345,
+      "pos_y": 1052,
+      "created_at": "2026-09-10T22:32:50.063225+00:00",
+      "polygon": [
+        [
+          4056,
+          1010
+        ],
+        [
+          4178,
+          940
+        ],
+        [
+          4314,
+          911
+        ],
+        [
+          4476,
+          988
+        ],
+        [
+          4656,
+          1078
+        ],
+        [
+          4809,
+          1205
+        ],
+        [
+          4864,
+          1273
+        ],
+        [
+          4864,
+          1321
+        ],
+        [
+          4744,
+          1409
+        ],
+        [
+          4671,
+          1429
+        ],
+        [
+          4284,
+          1199
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 18
+    },
+    {
+      "id": "0c7920c7-ecc6-4eca-8761-5e53969fa2ab",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu thăm nuôi",
+      "description": "Khu thăm nuôi",
+      "pos_x": 3740,
+      "pos_y": 1982,
+      "created_at": "2026-09-10T22:17:30.646056+00:00",
+      "polygon": [
+        [
+          3687,
+          1877
+        ],
+        [
+          3757,
+          1871
+        ],
+        [
+          3861,
+          1877
+        ],
+        [
+          3865,
+          1950
+        ],
+        [
+          3865,
+          2020
+        ],
+        [
+          3853,
+          2116
+        ],
+        [
+          3777,
+          2127
+        ],
+        [
+          3657,
+          2117
+        ],
+        [
+          3631,
+          2110
+        ],
+        [
+          3628,
+          2059
+        ],
+        [
+          3639,
+          2022
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 19
+    },
+    {
+      "id": "957ad2ee-a2ae-48c4-ae17-652551d86464",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu y tế",
+      "description": "Khu y tế",
+      "pos_x": 3070,
+      "pos_y": 2095,
+      "created_at": "2026-09-10T22:14:09.318829+00:00",
+      "polygon": [
+        [
+          2961,
+          2120
+        ],
+        [
+          2980,
+          2071
+        ],
+        [
+          3029,
+          2055
+        ],
+        [
+          3130,
+          2044
+        ],
+        [
+          3265,
+          2048
+        ],
+        [
+          3271,
+          2113
+        ],
+        [
+          3101,
+          2126
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 20
+    },
+    {
+      "id": "16afca9e-d93c-4e58-8aec-114bcd3db8e5",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Nhà kho",
+      "description": "Nhà kho",
+      "pos_x": 4899,
+      "pos_y": 2048,
+      "created_at": "2026-09-10T22:22:57.110156+00:00",
+      "polygon": [
+        [
+          5268,
+          2129
+        ],
+        [
+          5279,
+          2046
+        ],
+        [
+          5218,
+          1983
+        ],
+        [
+          5143,
+          2009
+        ],
+        [
+          5092,
+          1997
+        ],
+        [
+          5066,
+          1976
+        ],
+        [
+          5061,
+          1944
+        ],
+        [
+          4853,
+          1945
+        ],
+        [
+          4819,
+          1999
+        ],
+        [
+          4679,
+          2044
+        ],
+        [
+          4599,
+          2054
+        ],
+        [
+          4360,
+          2053
+        ],
+        [
+          4366,
+          2118
+        ],
+        [
+          4614,
+          2105
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 21
+    },
+    {
+      "id": "5ccfae83-f4ac-4369-bb66-f700e3b45725",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Nhà xe",
+      "description": "Nhà xe",
+      "pos_x": 4349,
+      "pos_y": 1938,
+      "created_at": "2026-09-10T22:26:03.837534+00:00",
+      "polygon": [
+        [
+          4304,
+          1927
+        ],
+        [
+          4346,
+          1922
+        ],
+        [
+          4407,
+          1920
+        ],
+        [
+          4412,
+          1910
+        ],
+        [
+          4448,
+          1912
+        ],
+        [
+          4445,
+          1951
+        ],
+        [
+          4390,
+          1955
+        ],
+        [
+          4317,
+          1959
+        ],
+        [
+          4302,
+          1953
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 22
+    },
+    {
+      "id": "c72a4088-5b21-4769-aafb-9bb72be70e4e",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Sân bóng",
+      "description": "Sân bóng",
+      "pos_x": 4071,
+      "pos_y": 2020,
+      "created_at": "2026-09-10T22:20:40.588007+00:00",
+      "polygon": [
+        [
+          3958,
+          1916
+        ],
+        [
+          4175,
+          1916
+        ],
+        [
+          4196,
+          2061
+        ],
+        [
+          3960,
+          2067
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 23
+    },
+    {
+      "id": "19d863e4-df4a-46d2-b4e2-6a78ea88cb93",
+      "campus_id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Hội trường",
+      "description": null,
+      "pos_x": 1944,
+      "pos_y": 1271,
+      "created_at": "2026-09-12T18:47:15.209016+00:00",
+      "polygon": [
+        [
+          1688,
+          1162
+        ],
+        [
+          2195,
+          1177
+        ],
+        [
+          2206,
+          1256
+        ],
+        [
+          2232,
+          1258
+        ],
+        [
+          2226,
+          1384
+        ],
+        [
+          2195,
+          1378
+        ],
+        [
+          2197,
+          1468
+        ],
+        [
+          1695,
+          1459
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 1
+    },
+    {
+      "id": "48af1971-25df-4709-aad5-ae47302df385",
+      "campus_id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu A (nữ)",
+      "description": "Công năng: Quản lý người cai nghiện\n1000m2\nSức chứa tối đa: 80 người (03 phòng)\nNgười cai nghiện: 66 \nNhân sự: 06 (01 CA, 05 LĐHĐ)\nĐại úy Trình Văn Trung, Cán bộ, 0962521213\nPhía Bắc giáp Khu Cắt cơn\nPhía Năm giáp Khu Hành chính\nPhía Tây giáp Khu kỷ luật\nPhía Đông giáp Xưởng cũ.\n",
+      "pos_x": 2593,
+      "pos_y": 2845,
+      "created_at": "2026-09-12T18:40:08.83821+00:00",
+      "polygon": [
+        [
+          2356,
+          2657
+        ],
+        [
+          2915,
+          2644
+        ],
+        [
+          2921,
+          3114
+        ],
+        [
+          2379,
+          3121
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 2
+    },
+    {
+      "id": "c3f29f33-362d-4115-97d7-15f3f4ddc266",
+      "campus_id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu cắt cơn giải độc",
+      "description": "Công năng: Thực hiện cắt cơn giải độc\n1000m2\nSức chứa tối đa: 80 người (03 phòng)\nNgười cai nghiện: 28\nNhân sự: 04 (02 CA, 02 LĐHĐ)\nTrung tá Đoàn Xuân Quang, Cán bộ, 0972.052.679\nPhía Bắc giáp Khu C cũ (không sử dụng do xuống cấp)\nPhía Năm giáp Khu Kỷ luật\nPhía Tây giáp Khu Sân đất trống\nPhía Đông giáp Khu A\n",
+      "pos_x": 3175,
+      "pos_y": 2364,
+      "created_at": "2026-09-12T18:41:19.877133+00:00",
+      "polygon": [
+        [
+          2962,
+          2220
+        ],
+        [
+          2946,
+          2633
+        ],
+        [
+          3442,
+          2638
+        ],
+        [
+          3453,
+          2229
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 3
+    },
+    {
+      "id": "bff2aa9f-e393-4ae7-9cad-f5a6a1e3e950",
+      "campus_id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu F",
+      "description": "Công năng: Quản lý người cai nghiện\n2000m2\nSức chứa tối đa: 152 người (08 phòng mỗi phòng 19 người)\nNgười cai nghiện: 213 \nNhân sự: 07 (03 CA, 04 LĐHĐ)\nTrung tá Nguyễn Văn Nguyên, Cán bộ, 0909.497.022\nPhía Bắc giáp Khu Trồng rau xanh\nPhía Nam giáp Sân đất trống\nPhía Tây giáp Khu G\nPhía Đông giáp Khu C cũ (không sử dụng do xuống cấp)\nGhi chú: Quá Tải\n",
+      "pos_x": 3743,
+      "pos_y": 1761,
+      "created_at": "2026-09-12T18:42:08.577935+00:00",
+      "polygon": [
+        [
+          3533,
+          1622
+        ],
+        [
+          4067,
+          1611
+        ],
+        [
+          4058,
+          2067
+        ],
+        [
+          3574,
+          2065
+        ],
+        [
+          3517,
+          2040
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 4
+    },
+    {
+      "id": "ca6892eb-71c9-4e61-a024-1b88bb50aa6f",
+      "campus_id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu G",
+      "description": "Công năng: Quản lý người cai nghiện\n2000m2\nSức chứa tối đa: 152 người (08 phòng mỗi phòng 19 người)\nNgười cai nghiện: 214 \nNhân sự: 06 (03 CA, 03 LĐHĐ)\nThượng úy Đặng Sĩ Tuấn Anh, Cán bộ, 0983382749\nPhía Bắc giáp Khu Trồng rau xanh\nPhía Năm giáp Khu Y tế\nPhía Tây giáp Khu Khu H\nPhía Đông giáp Khu F\nGhi chú: Quá Tải\n",
+      "pos_x": 3852,
+      "pos_y": 1306,
+      "created_at": "2026-09-12T18:42:43.440113+00:00",
+      "polygon": [
+        [
+          3530,
+          1587
+        ],
+        [
+          4069,
+          1593
+        ],
+        [
+          4082,
+          1119
+        ],
+        [
+          3544,
+          1113
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 5
+    },
+    {
+      "id": "86e8da17-3bb1-4c97-9601-42859a53d7b5",
+      "campus_id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu H",
+      "description": "Công năng: Quản lý người cai nghiện\n2000m2\nSức chứa tối đa: 152 người (08 phòng mỗi phòng 19 người)\nNgười cai nghiện: 211\nNhân sự: 06 (02 CA, 04 LĐHĐ)\nĐại úy Bồ Văn Thứ, Cán bộ, 0979.735.735\nPhía Bắc giáp Khu Trồng rau xanh\nPhía Năm giáp Khu I\nPhía Tây giáp Rừng \nPhía Đông giáp Khu G\nGhi chú: Quá Tải \n",
+      "pos_x": 3804,
+      "pos_y": 750,
+      "created_at": "2026-09-12T18:43:25.308574+00:00",
+      "polygon": [
+        [
+          3547,
+          593
+        ],
+        [
+          4081,
+          588
+        ],
+        [
+          4074,
+          1088
+        ],
+        [
+          3551,
+          1081
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 6
+    },
+    {
+      "id": "1e0e66f5-c395-495e-87e2-90102e09508c",
+      "campus_id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu hành chính",
+      "description": "Khu làm việc của Ban Chỉ huy cơ sở và Cán bộ chiến sĩ",
+      "pos_x": 1990,
+      "pos_y": 3241,
+      "created_at": "2026-09-12T18:38:44.921848+00:00",
+      "polygon": [
+        [
+          1642,
+          2725
+        ],
+        [
+          2291,
+          2734
+        ],
+        [
+          2288,
+          3591
+        ],
+        [
+          1613,
+          3620
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 7
+    },
+    {
+      "id": "2c9564ff-d4d6-4b7c-9d94-92ae4b8ee3e0",
+      "campus_id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu I",
+      "description": "Công năng: Quản lý người cai nghiện\n2000m2\nSức chứa tối đa: 152 người (08 phòng mỗi phòng 19 người)\nNgười cai nghiện: 240\nNhân sự: 06 (03 CA, 03 LĐHĐ)\nTrung tá Đoàn Xuân Quang, Cán bộ, 0972.052.679\nPhía Bắc giáp Khu H\nPhía Năm giáp Khu K\nPhía Tây giáp Khu Rừng\nPhía Đông giáp Khu Y tế\nGhi chú: Quá Tải \n",
+      "pos_x": 2618,
+      "pos_y": 831,
+      "created_at": "2026-09-12T18:44:19.610537+00:00",
+      "polygon": [
+        [
+          2379,
+          564
+        ],
+        [
+          2366,
+          1039
+        ],
+        [
+          2438,
+          1111
+        ],
+        [
+          2886,
+          1117
+        ],
+        [
+          2901,
+          560
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 8
+    },
+    {
+      "id": "7a7c2666-c46d-44fb-ade4-f851573dbc5d",
+      "campus_id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu K",
+      "description": "Công năng: Quản lý người cai nghiện\n2000m2\nSức chứa tối đa: 152 người (08 phòng mỗi phòng 19 người)\nNgười cai nghiện: 219\nNhân sự: 06 (03 CA, 03 LĐHĐ)\nTrung tá Hoàng Xuân Trung, Cán bộ, 0865759107\nPhía Bắc giáp Khu I\nPhía Năm giáp Khu Thăm gặp\nPhía Tây giáp Khu Rừng\nPhía Đông giáp Bếp nấu ăn cho người cai nghiện\nGhi chú: Quá Tải \n",
+      "pos_x": 3183,
+      "pos_y": 887,
+      "created_at": "2026-09-12T18:45:00.311446+00:00",
+      "polygon": [
+        [
+          2907,
+          559
+        ],
+        [
+          2907,
+          1101
+        ],
+        [
+          3386,
+          1109
+        ],
+        [
+          3429,
+          1054
+        ],
+        [
+          3439,
+          564
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 9
+    },
+    {
+      "id": "0f9c3902-eca7-4b7b-80a7-bbd8bf787325",
+      "campus_id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu thăm gặp",
+      "description": null,
+      "pos_x": 1949,
+      "pos_y": 764,
+      "created_at": "2026-09-12T18:45:42.298437+00:00",
+      "polygon": [
+        [
+          1627,
+          547
+        ],
+        [
+          1632,
+          1065
+        ],
+        [
+          2198,
+          1086
+        ],
+        [
+          2273,
+          1022
+        ],
+        [
+          2266,
+          552
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 10
+    },
+    {
+      "id": "10794b0a-3f3f-41f9-b9f9-42dc714bab4f",
+      "campus_id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Khu y tế",
+      "description": "Công năng: Thực hiện cách ly, khám điều trị bệnh\n1500m2\nSức chứa tối đa: 60 người (03 phòng)\nNgười cai nghiện: 28\nNhân sự: 14 (02 CA, 12 LĐHĐ)\nTrung tá Hà Văn Thành - PTCS, 0961.577.877\nPhía Bắc giáp Khu G và H\nPhía Năm giáp Khu Bếp người cai nghiện\nPhía Tây giáp Khu Khu I, Khu K\nPhía Đông giáp Bãi đất trống\n",
+      "pos_x": 3026,
+      "pos_y": 1408,
+      "created_at": "2026-09-12T18:46:29.767938+00:00",
+      "polygon": [
+        [
+          2950,
+          1192
+        ],
+        [
+          2960,
+          1496
+        ],
+        [
+          3404,
+          1498
+        ],
+        [
+          3404,
+          1384
+        ],
+        [
+          3092,
+          1374
+        ],
+        [
+          3046,
+          1363
+        ],
+        [
+          3050,
+          1194
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 11
+    },
+    {
+      "id": "4900624f-4030-4c45-b5be-41389b5acec3",
+      "campus_id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Nơi sinh hoạt CBCS",
+      "description": null,
+      "pos_x": 1974,
+      "pos_y": 1599,
+      "created_at": "2026-09-12T18:48:56.204869+00:00",
+      "polygon": [
+        [
+          1719,
+          1510
+        ],
+        [
+          2052,
+          1517
+        ],
+        [
+          2059,
+          1976
+        ],
+        [
+          1944,
+          1976
+        ],
+        [
+          1926,
+          1626
+        ],
+        [
+          1721,
+          1624
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 12
+    },
+    {
+      "id": "91c5f3f5-e624-485c-80d0-5f3d1007d065",
+      "campus_id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75",
+      "category_id": "5d3f14f6-883e-4f44-9029-e275c8805b41",
+      "name": "Tổ 2",
+      "description": null,
+      "pos_x": 2154,
+      "pos_y": 1699,
+      "created_at": "2026-09-12T18:48:08.564723+00:00",
+      "polygon": [
+        [
+          2099,
+          1524
+        ],
+        [
+          2105,
+          1851
+        ],
+        [
+          2128,
+          1856
+        ],
+        [
+          2126,
+          1960
+        ],
+        [
+          2103,
+          1965
+        ],
+        [
+          2106,
+          2052
+        ],
+        [
+          2222,
+          2045
+        ],
+        [
+          2226,
+          1940
+        ],
+        [
+          2237,
+          1935
+        ],
+        [
+          2236,
+          1885
+        ],
+        [
+          2222,
+          1874
+        ],
+        [
+          2225,
+          1777
+        ],
+        [
+          2194,
+          1760
+        ],
+        [
+          2194,
+          1614
+        ],
+        [
+          2223,
+          1610
+        ],
+        [
+          2220,
+          1514
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 13
+    },
+    {
+      "id": "c5000a66-eea0-4d3f-872d-3cec0afa74d2",
+      "campus_id": "a4937b14-fd54-4f06-b622-491431cce674",
+      "category_id": "983d44a8-8079-42f5-b162-2fa1077ce358",
+      "name": "ĐẤT DỰ TRỮ PHÁT TRIỂN (2 ha)",
+      "description": null,
+      "pos_x": 4213,
+      "pos_y": 2274,
+      "created_at": "2026-09-14T04:10:20.02633+00:00",
+      "polygon": [
+        [
+          3772,
+          1784
+        ],
+        [
+          4484,
+          1860
+        ],
+        [
+          4602,
+          2524
+        ],
+        [
+          3842,
+          2511
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 1
+    },
+    {
+      "id": "f6c4b40e-6659-4261-9908-fd00c0ee8ae1",
+      "campus_id": "a4937b14-fd54-4f06-b622-491431cce674",
+      "category_id": "983d44a8-8079-42f5-b162-2fa1077ce358",
+      "name": "Khu hành chính - tòa án",
+      "description": null,
+      "pos_x": 3835,
+      "pos_y": 1702,
+      "created_at": "2026-09-14T04:00:28.4997+00:00",
+      "polygon": [
+        [
+          3764,
+          1663
+        ],
+        [
+          3819,
+          1665
+        ],
+        [
+          3819,
+          1681
+        ],
+        [
+          3927,
+          1685
+        ],
+        [
+          3929,
+          1747
+        ],
+        [
+          3773,
+          1740
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 2
+    },
+    {
+      "id": "3b735fb3-c5eb-4c9f-acb7-c2960ff98eb8",
+      "campus_id": "a4937b14-fd54-4f06-b622-491431cce674",
+      "category_id": "983d44a8-8079-42f5-b162-2fa1077ce358",
+      "name": "Nhà hạnh phúc",
+      "description": null,
+      "pos_x": 4211,
+      "pos_y": 3152,
+      "created_at": "2026-09-14T04:31:31.821052+00:00",
+      "polygon": [
+        [
+          4177,
+          3104
+        ],
+        [
+          4245,
+          3103
+        ],
+        [
+          4259,
+          3225
+        ],
+        [
+          4194,
+          3225
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 3
+    },
+    {
+      "id": "83bee939-07ae-4c45-a280-bb1aa1f8a740",
+      "campus_id": "a4937b14-fd54-4f06-b622-491431cce674",
+      "category_id": "983d44a8-8079-42f5-b162-2fa1077ce358",
+      "name": "Nhà trực - thăm gặp",
+      "description": "Nhà trực - thăm gặp",
+      "pos_x": 4000,
+      "pos_y": 3172,
+      "created_at": "2026-09-14T04:32:18.837815+00:00",
+      "polygon": [
+        [
+          3917,
+          3134
+        ],
+        [
+          4080,
+          3131
+        ],
+        [
+          4092,
+          3226
+        ],
+        [
+          3923,
+          3231
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 4
+    },
+    {
+      "id": "12b023b3-f663-4daa-8977-a7b3fb21441c",
+      "campus_id": "a4937b14-fd54-4f06-b622-491431cce674",
+      "category_id": "983d44a8-8079-42f5-b162-2fa1077ce358",
+      "name": "Tiểu khu cai nghiện tự nguyện 1",
+      "description": "Tiểu khu cai nghiện tự nguyện 1",
+      "pos_x": 4464,
+      "pos_y": 2741,
+      "created_at": "2026-09-14T04:12:01.27643+00:00",
+      "polygon": [
+        [
+          4323,
+          2644
+        ],
+        [
+          4378,
+          2641
+        ],
+        [
+          4373,
+          2593
+        ],
+        [
+          4514,
+          2591
+        ],
+        [
+          4522,
+          2644
+        ],
+        [
+          4579,
+          2646
+        ],
+        [
+          4597,
+          2789
+        ],
+        [
+          4579,
+          2793
+        ],
+        [
+          4586,
+          2842
+        ],
+        [
+          4611,
+          2843
+        ],
+        [
+          4615,
+          2899
+        ],
+        [
+          4408,
+          2909
+        ],
+        [
+          4399,
+          2867
+        ],
+        [
+          4388,
+          2869
+        ],
+        [
+          4381,
+          2828
+        ],
+        [
+          4354,
+          2833
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 5
+    },
+    {
+      "id": "70f0ffb9-bec9-445e-a4af-4a26a52b4aa1",
+      "campus_id": "a4937b14-fd54-4f06-b622-491431cce674",
+      "category_id": "983d44a8-8079-42f5-b162-2fa1077ce358",
+      "name": "Tiểu khu cai nghiện tự nguyện 2",
+      "description": "Tiểu khu cai nghiện tự nguyện 1",
+      "pos_x": 4088,
+      "pos_y": 2706,
+      "created_at": "2026-09-14T04:13:49.132244+00:00",
+      "polygon": [
+        [
+          3972,
+          2576
+        ],
+        [
+          3979,
+          2633
+        ],
+        [
+          3920,
+          2633
+        ],
+        [
+          3935,
+          2791
+        ],
+        [
+          3993,
+          2790
+        ],
+        [
+          4002,
+          2846
+        ],
+        [
+          4205,
+          2847
+        ],
+        [
+          4200,
+          2800
+        ],
+        [
+          4270,
+          2800
+        ],
+        [
+          4239,
+          2583
+        ],
+        [
+          4181,
+          2582
+        ],
+        [
+          4179,
+          2601
+        ],
+        [
+          4129,
+          2601
+        ],
+        [
+          4129,
+          2581
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 6
+    },
+    {
+      "id": "90a95fd5-a50a-48c7-9858-407bc0494a99",
+      "campus_id": "a4937b14-fd54-4f06-b622-491431cce674",
+      "category_id": "983d44a8-8079-42f5-b162-2fa1077ce358",
+      "name": "Tiểu khu cai nghiện tự nguyện vị thành niên",
+      "description": null,
+      "pos_x": 4508,
+      "pos_y": 3180,
+      "created_at": "2026-09-14T04:30:33.136356+00:00",
+      "polygon": [
+        [
+          4322,
+          3026
+        ],
+        [
+          4353,
+          3024
+        ],
+        [
+          4354,
+          3009
+        ],
+        [
+          4399,
+          3008
+        ],
+        [
+          4415,
+          3150
+        ],
+        [
+          4590,
+          3146
+        ],
+        [
+          4566,
+          3018
+        ],
+        [
+          4639,
+          3016
+        ],
+        [
+          4666,
+          3160
+        ],
+        [
+          4610,
+          3168
+        ],
+        [
+          4617,
+          3215
+        ],
+        [
+          4427,
+          3232
+        ],
+        [
+          4394,
+          3230
+        ],
+        [
+          4385,
+          3202
+        ],
+        [
+          4344,
+          3208
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 7
+    },
+    {
+      "id": "2268df43-671c-434d-890d-727fa13c21b7",
+      "campus_id": "a4937b14-fd54-4f06-b622-491431cce674",
+      "category_id": "983d44a8-8079-42f5-b162-2fa1077ce358",
+      "name": "Tiểu khu cắt cơn giải độc",
+      "description": null,
+      "pos_x": 3927,
+      "pos_y": 1451,
+      "created_at": "2026-09-14T03:58:30.942993+00:00",
+      "polygon": [
+        [
+          3829,
+          1374
+        ],
+        [
+          3832,
+          1347
+        ],
+        [
+          3995,
+          1363
+        ],
+        [
+          3999,
+          1390
+        ],
+        [
+          4052,
+          1403
+        ],
+        [
+          4062,
+          1542
+        ],
+        [
+          4026,
+          1536
+        ],
+        [
+          4028,
+          1584
+        ],
+        [
+          3828,
+          1562
+        ],
+        [
+          3821,
+          1535
+        ],
+        [
+          3800,
+          1534
+        ],
+        [
+          3783,
+          1370
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 8
+    },
+    {
+      "id": "b7e8e406-2c65-4c6c-8d35-7229f77ded0f",
+      "campus_id": "a4937b14-fd54-4f06-b622-491431cce674",
+      "category_id": "983d44a8-8079-42f5-b162-2fa1077ce358",
+      "name": "Tiểu khu quản lý đối tượng ban đầu 1",
+      "description": "Tiểu khu quản lý đối tượng ban đầu 1",
+      "pos_x": 4224,
+      "pos_y": 1455,
+      "created_at": "2026-09-14T04:07:41.10612+00:00",
+      "polygon": [
+        [
+          4165,
+          1416
+        ],
+        [
+          4162,
+          1384
+        ],
+        [
+          4288,
+          1401
+        ],
+        [
+          4294,
+          1440
+        ],
+        [
+          4340,
+          1451
+        ],
+        [
+          4349,
+          1524
+        ],
+        [
+          4340,
+          1537
+        ],
+        [
+          4306,
+          1530
+        ],
+        [
+          4308,
+          1559
+        ],
+        [
+          4299,
+          1571
+        ],
+        [
+          4190,
+          1556
+        ],
+        [
+          4180,
+          1524
+        ],
+        [
+          4122,
+          1511
+        ],
+        [
+          4115,
+          1487
+        ],
+        [
+          4105,
+          1406
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 9
+    },
+    {
+      "id": "50217cb8-9117-4272-90e8-e1f4fd60c642",
+      "campus_id": "a4937b14-fd54-4f06-b622-491431cce674",
+      "category_id": "983d44a8-8079-42f5-b162-2fa1077ce358",
+      "name": "Tiểu khu quản lý đối tượng ban đầu 2",
+      "description": "Tiểu khu quản lý đối tượng ban đầu 1",
+      "pos_x": 4224,
+      "pos_y": 1676,
+      "created_at": "2026-09-14T04:08:30.797643+00:00",
+      "polygon": [
+        [
+          4198,
+          1636
+        ],
+        [
+          4194,
+          1607
+        ],
+        [
+          4322,
+          1623
+        ],
+        [
+          4329,
+          1664
+        ],
+        [
+          4377,
+          1671
+        ],
+        [
+          4388,
+          1750
+        ],
+        [
+          4374,
+          1761
+        ],
+        [
+          4343,
+          1758
+        ],
+        [
+          4344,
+          1789
+        ],
+        [
+          4336,
+          1802
+        ],
+        [
+          4156,
+          1778
+        ],
+        [
+          4143,
+          1637
+        ]
+      ],
+      "custom_fields": [],
+      "manager_id": null,
+      "display_number": 10
+    }
+  ],
+  "location_images": [
+    {
+      "id": "5a568ac2-f5b9-4e1a-bebe-4220c8914ed5",
+      "location_id": "406d78df-7735-4400-89aa-20a8edeae8b9",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/35dbabd1-74fd-4572-92b9-c4fd1260fd64.JPG",
+      "sort_order": 0
+    },
+    {
+      "id": "ce3953d1-0956-4a1e-a717-d1f2824df77f",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/a60753d7-c154-4189-b47d-3b17b6b89651.JPG",
+      "sort_order": 0
+    },
+    {
+      "id": "8b62fbc1-fa22-400f-85c5-f969ddf0fb1a",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/4a48e564-a72e-43f9-be1f-352874549e3c.JPG",
+      "sort_order": 2
+    },
+    {
+      "id": "f6e5df77-4488-4fda-9c73-6c56be2210d0",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/bcbb6fa8-7af9-440e-8902-ddaa7d6a5f87.JPG",
+      "sort_order": 3
+    },
+    {
+      "id": "5a6219ba-a296-4432-89c5-d5e32f959bff",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/afa59fd6-06ad-462e-8680-2d188f3e9a5d.JPG",
+      "sort_order": 4
+    },
+    {
+      "id": "4c95dfef-290d-43d8-9e0b-8ea10e0a3388",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/56b1cf14-fe01-4a9f-b650-b542b2ba43dd.JPG",
+      "sort_order": 5
+    },
+    {
+      "id": "4171ec4d-40f9-4292-8a75-3a47ac3976fc",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/636a32b9-9334-430e-9c44-72623c7516c5.JPG",
+      "sort_order": 6
+    },
+    {
+      "id": "af785301-1bce-4a09-b20d-5bf14ae09579",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/fabfdc65-43ed-4a98-9fd1-124207bb20ac.JPG",
+      "sort_order": 7
+    },
+    {
+      "id": "51aa6be2-29f0-4ab9-8d5d-ed5e51177692",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/a3e9be9e-ae14-418a-8dac-d5f7f88e2b81.JPG",
+      "sort_order": 8
+    },
+    {
+      "id": "a73a6c5d-f257-4535-8040-877ae0bb0133",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/3a0d468b-97bc-4e78-8e16-e0ea6e76b664.JPG",
+      "sort_order": 9
+    },
+    {
+      "id": "e45ff49b-a20a-4512-9d21-0bbe67e6f45f",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/d0313552-bc52-45fa-8a7d-51db528f4038.JPG",
+      "sort_order": 10
+    },
+    {
+      "id": "e29aa3bb-ae91-4cbd-9ae7-8b4914846e36",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/3f1f108d-39d3-41ba-9ccc-b30b6bf1a349.JPG",
+      "sort_order": 11
+    },
+    {
+      "id": "1e2d34dc-e07f-495e-90ef-13b4a717d4f2",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/c91e94c7-82d9-4fb4-9773-f50cddaa80be.JPG",
+      "sort_order": 12
+    },
+    {
+      "id": "7519bd83-5097-41e3-889d-db3eaafd94e2",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/40bc182c-0765-495e-9bfa-700ab7d71841.JPG",
+      "sort_order": 13
+    },
+    {
+      "id": "bb258640-0d11-4d4c-8a63-1c2ab9a99d9e",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/8f4c7242-dcd8-49b5-afc6-b93dfa4f9fe3.JPG",
+      "sort_order": 14
+    },
+    {
+      "id": "6db1e35a-b33a-4917-b074-8a1cf6028a3c",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/d93d1b67-bbc1-4ca3-bb21-60dea834af34.JPG",
+      "sort_order": 15
+    },
+    {
+      "id": "b8d37a49-16fe-4133-a6f8-ec6c4b7f87de",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/6c54d246-0c91-420e-a7da-ae0554fa4807.JPG",
+      "sort_order": 16
+    },
+    {
+      "id": "80e32405-7ce3-4df4-824e-17f3edff93ed",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/8421ad6a-8e83-4c46-811c-8f5cbf67047a.JPG",
+      "sort_order": 17
+    },
+    {
+      "id": "04d4d814-18d7-493d-b457-4540999b2ac6",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/d0d1ee5b-d6ab-4393-a304-3cf5fb4197b8.JPG",
+      "sort_order": 18
+    },
+    {
+      "id": "e9d10f39-96e7-4e5d-a2a5-351bea1dbf86",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/0ed36304-5bd2-419b-988c-11d7fd518fba.JPG",
+      "sort_order": 19
+    },
+    {
+      "id": "523cccbc-1263-4a6b-8391-5f4ce318cb41",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/bb909bf7-a2eb-40ee-801f-701c506ed935.JPG",
+      "sort_order": 20
+    },
+    {
+      "id": "6026aa6f-ff3b-4830-9270-84524c32dec5",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/b481023f-ea7e-4618-a03d-f17bab2a27f1.JPG",
+      "sort_order": 21
+    },
+    {
+      "id": "0603f750-6c7a-4e9f-9924-f03231ee4068",
+      "location_id": "85b4643b-87fe-4763-b5f4-c5f009a3316c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/7be4259a-38b9-4264-897c-c3028b6e1c99.JPG",
+      "sort_order": 22
+    },
+    {
+      "id": "729bd80a-6323-469c-84e1-4d424ce9fb67",
+      "location_id": "4be05dad-7f6d-48b7-82ea-10458a604037",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/268a9066-bc12-493a-8a9f-4310e7887bcd.JPG",
+      "sort_order": 0
+    },
+    {
+      "id": "7cc906a2-7847-4d39-b0c9-660f203c00c1",
+      "location_id": "4d32deb1-91e1-4bc3-ae3b-a52a5e0f4883",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/383439be-350e-48c7-9026-b096942b9659.JPG",
+      "sort_order": 0
+    },
+    {
+      "id": "3ed03c33-7866-4105-8b6e-29522d340fc0",
+      "location_id": "4d32deb1-91e1-4bc3-ae3b-a52a5e0f4883",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/d20aeb1c-4746-41d7-b115-3a7d6bf7ae6f.JPG",
+      "sort_order": 1
+    },
+    {
+      "id": "7e12cff9-9510-4b4f-87d6-1127d285f7b5",
+      "location_id": "4d32deb1-91e1-4bc3-ae3b-a52a5e0f4883",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/2e8924df-16bd-4257-8a72-8407dbfcd8f8.JPG",
+      "sort_order": 2
+    },
+    {
+      "id": "5902a765-40b6-4eb1-adab-a702518bfd74",
+      "location_id": "4d32deb1-91e1-4bc3-ae3b-a52a5e0f4883",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/d4b18e5c-7bd9-40ee-938e-41e4c77b348c.JPG",
+      "sort_order": 3
+    },
+    {
+      "id": "4db2c730-60f0-4c25-bd56-b3df28f2ad45",
+      "location_id": "4d32deb1-91e1-4bc3-ae3b-a52a5e0f4883",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/79f96775-ca0f-4edd-b473-53db70411295.JPG",
+      "sort_order": 4
+    },
+    {
+      "id": "5327dd59-d61b-4dfd-97a6-b1ddcb0cb9ee",
+      "location_id": "4d32deb1-91e1-4bc3-ae3b-a52a5e0f4883",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/5bbfd941-97fd-4eed-b2e2-a4c8518a2df8.JPG",
+      "sort_order": 5
+    },
+    {
+      "id": "4c15a23a-cb76-46ea-b64a-48286e248b95",
+      "location_id": "ec6bf123-c195-4ff0-a0d0-e491798be38b",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/4b3a5fc2-40a9-4e89-af6d-8342d2d3ad9e.JPG",
+      "sort_order": 0
+    },
+    {
+      "id": "558edf88-344a-47ab-bb84-18a3202fe9fc",
+      "location_id": "ec6bf123-c195-4ff0-a0d0-e491798be38b",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/5a47186f-feae-4804-ba0e-f81daea84a6f.JPG",
+      "sort_order": 1
+    },
+    {
+      "id": "854e8e0e-893f-4c6c-baa1-83fb81a297ef",
+      "location_id": "ec6bf123-c195-4ff0-a0d0-e491798be38b",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/9fea1e70-374c-445e-bcb4-29fc4943d78d.JPG",
+      "sort_order": 2
+    },
+    {
+      "id": "3cfd96c4-ebfb-48e5-a884-b8ec08bb1e56",
+      "location_id": "ec6bf123-c195-4ff0-a0d0-e491798be38b",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/a1dc5fb5-d550-4b05-b35c-a50476497bca.JPG",
+      "sort_order": 3
+    },
+    {
+      "id": "d0127c85-25c6-493a-922f-d19a7067b8d4",
+      "location_id": "957ad2ee-a2ae-48c4-ae17-652551d86464",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/109d285f-01f0-43e0-9b83-0022706a1627.JPG",
+      "sort_order": 0
+    },
+    {
+      "id": "0c1c90e5-4882-40e2-919f-8c87e63bc110",
+      "location_id": "957ad2ee-a2ae-48c4-ae17-652551d86464",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/d1d1858a-6d1b-4912-9670-20e7ac81424b.JPG",
+      "sort_order": 1
+    },
+    {
+      "id": "85849d40-8187-4d80-9d5d-80f0935845b3",
+      "location_id": "957ad2ee-a2ae-48c4-ae17-652551d86464",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/9963e600-18d9-4b2b-bb16-d01e5fbd671f.JPG",
+      "sort_order": 2
+    },
+    {
+      "id": "0edf200d-2275-4beb-8c66-8c5d6f4136e8",
+      "location_id": "957ad2ee-a2ae-48c4-ae17-652551d86464",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/5527a8ff-c792-4968-9e18-53920e620c3c.JPG",
+      "sort_order": 3
+    },
+    {
+      "id": "01df5ed9-6e5b-4208-a4b0-38356eac5679",
+      "location_id": "957ad2ee-a2ae-48c4-ae17-652551d86464",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/4721f973-848e-4144-9664-1deb30fe5ee4.JPG",
+      "sort_order": 4
+    },
+    {
+      "id": "bc8dfee5-998b-4778-b56f-b66f4f36de91",
+      "location_id": "f3969321-98e1-4beb-b28a-0ebda6a73c15",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/b2297609-2918-43ac-b998-0da8e72fdbf7.JPG",
+      "sort_order": 0
+    },
+    {
+      "id": "926f4058-c69f-478f-a978-8ea3eb29e1b3",
+      "location_id": "0c7920c7-ecc6-4eca-8761-5e53969fa2ab",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/c0aa9a98-0f74-45c7-a914-8c6355e273aa.JPG",
+      "sort_order": 0
+    },
+    {
+      "id": "775e5a62-c3d9-4f5f-86cc-627e66835924",
+      "location_id": "0c7920c7-ecc6-4eca-8761-5e53969fa2ab",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/5ef76786-947b-4890-85e3-776b71835ca2.JPG",
+      "sort_order": 1
+    },
+    {
+      "id": "be8cd7c6-2647-4ad7-b7c3-5617cf052ad3",
+      "location_id": "0c7920c7-ecc6-4eca-8761-5e53969fa2ab",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/21ec0370-d172-468e-9a06-53e1522caf03.JPG",
+      "sort_order": 2
+    },
+    {
+      "id": "0d286817-e2a1-4ac3-a317-a9fc7a39c765",
+      "location_id": "0c7920c7-ecc6-4eca-8761-5e53969fa2ab",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/64051218-769c-4415-b776-e9c470d47bd0.JPG",
+      "sort_order": 3
+    },
+    {
+      "id": "fa4eee2b-6e9b-40bf-9f6b-7b285e4b3c81",
+      "location_id": "0c7920c7-ecc6-4eca-8761-5e53969fa2ab",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/b62a8d30-4fa4-48f9-9142-07ec79e8264a.JPG",
+      "sort_order": 4
+    },
+    {
+      "id": "b3c94dd7-0e30-4759-87b4-2ca1034ae819",
+      "location_id": "a8e115bc-273f-49d5-b4a4-41ca951162b8",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/5f6284a1-f180-463b-9496-b38db13fbbab.JPG",
+      "sort_order": 0
+    },
+    {
+      "id": "725d63d3-cb43-4e9a-b834-c22956b58642",
+      "location_id": "a8e115bc-273f-49d5-b4a4-41ca951162b8",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/0395a542-4303-405f-9154-272acd20a010.JPG",
+      "sort_order": 1
+    },
+    {
+      "id": "c3a6b625-4628-47f9-a8b1-6722dd001de4",
+      "location_id": "a8e115bc-273f-49d5-b4a4-41ca951162b8",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/fb97d3c0-5d68-4f7c-9ae3-20e96d3f2536.JPG",
+      "sort_order": 2
+    },
+    {
+      "id": "b0dc5783-41fe-4c49-b9eb-f9c6e56a4c70",
+      "location_id": "a8e115bc-273f-49d5-b4a4-41ca951162b8",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/c40827ba-dd67-428d-8e93-ca4d78401b8f.JPG",
+      "sort_order": 3
+    },
+    {
+      "id": "fcec4d10-63f7-4958-a4f3-593d2ec93571",
+      "location_id": "30de188b-1055-4084-9d2a-620094a6af4d",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/a0824876-724c-479d-953e-93bbae9a0d87.JPG",
+      "sort_order": 0
+    },
+    {
+      "id": "fc7956eb-c7c2-47ef-b8e0-c050edada0f9",
+      "location_id": "30de188b-1055-4084-9d2a-620094a6af4d",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/f1792594-0c28-41a1-bbd7-d476a5a806a1.JPG",
+      "sort_order": 1
+    },
+    {
+      "id": "c64fb872-328f-46d1-bd47-988a39dbfb17",
+      "location_id": "30de188b-1055-4084-9d2a-620094a6af4d",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/3f2c557c-bd70-4b71-a9b0-626bc5b3de3d.JPG",
+      "sort_order": 2
+    },
+    {
+      "id": "e1c9a954-7f1e-4096-a8da-5c39863959ac",
+      "location_id": "30de188b-1055-4084-9d2a-620094a6af4d",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/cb37a27a-ce57-4276-ba18-891573dc7fd8.JPG",
+      "sort_order": 3
+    },
+    {
+      "id": "d997709a-0a8f-4bcf-8521-3e8419ac07da",
+      "location_id": "c72a4088-5b21-4769-aafb-9bb72be70e4e",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/40c7e2d5-23c8-4117-b026-e580b0cfa386.JPG",
+      "sort_order": 0
+    },
+    {
+      "id": "70eddba1-863b-4856-b1e3-d91ffd89ea93",
+      "location_id": "dc65f9a6-5fe4-48c6-9758-45b93e39e1d2",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/4a89041c-dbae-479f-a440-79fcfc37b3f2.JPG",
+      "sort_order": 0
+    },
+    {
+      "id": "95ad9938-d925-4fb2-a2b6-5573342a4bf3",
+      "location_id": "dc65f9a6-5fe4-48c6-9758-45b93e39e1d2",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/fc8efa34-bdf8-48dc-aef2-edcd3359aaed.JPG",
+      "sort_order": 1
+    },
+    {
+      "id": "2dce3a51-9d62-4e3d-b284-b064a1e998bb",
+      "location_id": "dc65f9a6-5fe4-48c6-9758-45b93e39e1d2",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/a1469b19-92cc-444c-96ae-f37f6e416c7c.JPG",
+      "sort_order": 2
+    },
+    {
+      "id": "8c363096-b824-4b71-9804-3530f8aee02c",
+      "location_id": "dc65f9a6-5fe4-48c6-9758-45b93e39e1d2",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/2d166a10-b795-43b9-af46-055ac837f941.JPG",
+      "sort_order": 3
+    },
+    {
+      "id": "c7f42def-ac62-4377-a4aa-8ff5736a831d",
+      "location_id": "dc65f9a6-5fe4-48c6-9758-45b93e39e1d2",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/bd44116d-0bb4-4284-8e87-4742d4b12b1b.JPG",
+      "sort_order": 4
+    },
+    {
+      "id": "c37362c3-4942-4732-8b1f-f05ed1a03cd6",
+      "location_id": "f74f037f-359b-47b9-9084-77407f95efc6",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/406dfbde-c3a7-4f31-a2b3-440b57fc002a.JPG",
+      "sort_order": 0
+    },
+    {
+      "id": "420abd0f-dea2-4085-beb9-a3b6ca2e9ead",
+      "location_id": "f74f037f-359b-47b9-9084-77407f95efc6",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/327f9ba3-75d3-4c76-94ee-7e8477faf1b0.JPG",
+      "sort_order": 1
+    },
+    {
+      "id": "c9105c57-7552-4d73-ba82-f1354e7175e4",
+      "location_id": "f74f037f-359b-47b9-9084-77407f95efc6",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/6138cf1b-2c27-45cd-b4d0-51796be99cf6.JPG",
+      "sort_order": 2
+    },
+    {
+      "id": "37974b25-2826-4b7b-813f-9eeba02b0504",
+      "location_id": "f74f037f-359b-47b9-9084-77407f95efc6",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/5ad5678d-4e8a-4352-bd3d-eae8ecd55b6d.JPG",
+      "sort_order": 3
+    },
+    {
+      "id": "1e00da69-6a5e-463b-930b-c915a76bf15d",
+      "location_id": "f74f037f-359b-47b9-9084-77407f95efc6",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/6e170de0-7538-41eb-8f8a-7ff71036792c.JPG",
+      "sort_order": 4
+    },
+    {
+      "id": "0f957763-7369-4696-b108-b43a5b76ad6c",
+      "location_id": "f74f037f-359b-47b9-9084-77407f95efc6",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/d6a330f3-7180-4e9c-9566-1af51106cb24.JPG",
+      "sort_order": 5
+    },
+    {
+      "id": "1cdcd587-b341-40df-beb1-350bf3ab0f07",
+      "location_id": "f74f037f-359b-47b9-9084-77407f95efc6",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/76423671-5764-4d76-aa4b-fc3d22726955.JPG",
+      "sort_order": 6
+    },
+    {
+      "id": "246991d5-50e6-4e91-b43b-0d7e1527fb4e",
+      "location_id": "f0c90947-cb01-4e1b-ab25-646ff4923c60",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/82d80bef-6fd4-4f21-9614-dbeadc048e09.JPG",
+      "sort_order": 0
+    },
+    {
+      "id": "bb40adc6-fefd-49f6-8689-bc4095950396",
+      "location_id": "f0c90947-cb01-4e1b-ab25-646ff4923c60",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/04d62b1e-10d8-4496-a5fe-4e44544e23e1.JPG",
+      "sort_order": 1
+    },
+    {
+      "id": "10d572b1-1aee-43c8-aa63-722cd62fe07b",
+      "location_id": "f0c90947-cb01-4e1b-ab25-646ff4923c60",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/5505c57e-6af1-450d-a314-61abc76234bd.JPG",
+      "sort_order": 2
+    },
+    {
+      "id": "c2889b41-25e8-4011-bbe4-c1c7abdc2d59",
+      "location_id": "f0c90947-cb01-4e1b-ab25-646ff4923c60",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/4a0b6707-5dc7-4069-bb8d-254185b5420a.JPG",
+      "sort_order": 3
+    },
+    {
+      "id": "31e312c8-335d-49d4-93db-5703f7a02c08",
+      "location_id": "f0c90947-cb01-4e1b-ab25-646ff4923c60",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/76a8aa76-db51-4183-83d8-d583dbdcb2eb.JPG",
+      "sort_order": 4
+    },
+    {
+      "id": "8c03128c-e44f-49c7-a780-3c3edd574745",
+      "location_id": "f0c90947-cb01-4e1b-ab25-646ff4923c60",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/84352379-fd96-4880-a7c6-3c4e0f96391f.JPG",
+      "sort_order": 5
+    },
+    {
+      "id": "7e6490ba-c77b-413c-875d-e299b2359e64",
+      "location_id": "f0c90947-cb01-4e1b-ab25-646ff4923c60",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/671e6b64-913c-4962-b02c-4e039caff911.JPG",
+      "sort_order": 6
+    },
+    {
+      "id": "7029cc31-ef2c-45e8-92cd-873b52ce6587",
+      "location_id": "10794b0a-3f3f-41f9-b9f9-42dc714bab4f",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/1fb96c13-5130-46d5-a6f5-ee3b332b0eb9.jpg",
+      "sort_order": 0
+    },
+    {
+      "id": "022559fa-6792-4db8-8fbd-4ffe0b8ce32c",
+      "location_id": "10794b0a-3f3f-41f9-b9f9-42dc714bab4f",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/82f63774-dae1-4c90-aaa8-c8792bbeee47.jpg",
+      "sort_order": 1
+    },
+    {
+      "id": "92ba57ef-981d-4afe-a519-2e8736ce3f8b",
+      "location_id": "1e0e66f5-c395-495e-87e2-90102e09508c",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/91a3497a-42f9-4795-a17b-f0d011207961.jpg",
+      "sort_order": 0
+    },
+    {
+      "id": "3a62d789-37dd-4637-b9f4-660d4eb0b4cd",
+      "location_id": "2ea83894-c6f2-46d5-bd3c-9aef05442ddc",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/b9840a68-be1a-4123-a7b9-a8f7b7e50e69.jpg",
+      "sort_order": 0
+    },
+    {
+      "id": "0d4dedd8-4a27-42d4-9fa8-74dba7db1927",
+      "location_id": "2ea83894-c6f2-46d5-bd3c-9aef05442ddc",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/39d30db0-ab31-4ded-9bfe-e6507f5b0696.jpg",
+      "sort_order": 1
+    },
+    {
+      "id": "60b4e4af-9fd5-42d7-a3d3-3538a8500038",
+      "location_id": "2ea83894-c6f2-46d5-bd3c-9aef05442ddc",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/27ec81b3-7f21-4aa8-b1c4-d6c557b55294.jpg",
+      "sort_order": 2
+    },
+    {
+      "id": "b652576b-561c-4784-936b-2fd7f99d2f1e",
+      "location_id": "8890d4e3-b3dd-434a-bdf9-db1eb0279dae",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/bfc06680-3b4a-494e-9133-49382e6dc9c1.jpg",
+      "sort_order": 0
+    },
+    {
+      "id": "10ccbb3f-5221-4127-a5a8-3a0e77f22b46",
+      "location_id": "8890d4e3-b3dd-434a-bdf9-db1eb0279dae",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/40dfd6e5-9bf4-4156-b9f4-82d505e0d626.jpg",
+      "sort_order": 1
+    },
+    {
+      "id": "d53da454-c191-4d19-9725-9cf35fa18088",
+      "location_id": "16dbdad4-ce74-435e-b107-35d0c58ac3dc",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/623e01b2-de06-4f36-9bdb-bd5cfe0b73c0.jpg",
+      "sort_order": 0
+    },
+    {
+      "id": "a2f0bbf4-e033-4444-a192-d86add618c3f",
+      "location_id": "16dbdad4-ce74-435e-b107-35d0c58ac3dc",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/5ea1373e-90ad-4bfa-a790-a9e4889f960d.jpg",
+      "sort_order": 1
+    },
+    {
+      "id": "acd57661-e3e6-4947-9990-cdad60b3b617",
+      "location_id": "16dbdad4-ce74-435e-b107-35d0c58ac3dc",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/9f67ee13-4cc1-4d51-b941-d1acf318b5c3.jpg",
+      "sort_order": 2
+    },
+    {
+      "id": "5c9676f7-bb5b-4f8c-ad70-620732944259",
+      "location_id": "16dbdad4-ce74-435e-b107-35d0c58ac3dc",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/0046fd46-bacb-4352-a783-bec4e7f8cbaf.jpg",
+      "sort_order": 3
+    },
+    {
+      "id": "fdc88bfd-cef8-4dd2-b5e7-2ce982b3fb8c",
+      "location_id": "04ed4f8e-2ba6-4dd7-931e-8ed6d79c0ecc",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/c04a6b68-12b2-46e3-ae07-0c8230cc9ded.jpg",
+      "sort_order": 0
+    },
+    {
+      "id": "d2bcd672-fa47-4e3e-b632-bc6ce4b02cd7",
+      "location_id": "04ed4f8e-2ba6-4dd7-931e-8ed6d79c0ecc",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/b9f3173c-f000-4096-a40b-438063cc5b2d.jpg",
+      "sort_order": 1
+    },
+    {
+      "id": "5ba8f00c-77a8-476e-8c6a-f2ea4ad2c368",
+      "location_id": "b43abe2c-74d6-4dc3-96e7-7e614d05f589",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/f7f807b9-a349-42b0-8b50-6a682c19390d.jpg",
+      "sort_order": 0
+    },
+    {
+      "id": "1c80b4fe-c043-406a-9106-675156feb34b",
+      "location_id": "b43abe2c-74d6-4dc3-96e7-7e614d05f589",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/b0f740f0-b880-434d-9508-0cd2c88f6970.jpg",
+      "sort_order": 1
+    },
+    {
+      "id": "588d418f-86c6-4eea-8a46-980b22a1b137",
+      "location_id": "b43abe2c-74d6-4dc3-96e7-7e614d05f589",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/c26ba7d3-b00b-4203-b387-069a73a1f41c.jpg",
+      "sort_order": 2
+    },
+    {
+      "id": "116bd3f2-0f05-4214-bc37-e9a3ad48b52a",
+      "location_id": "b43abe2c-74d6-4dc3-96e7-7e614d05f589",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/354fed22-7f17-4131-9974-00d75da16b11.jpg",
+      "sort_order": 3
+    },
+    {
+      "id": "7242574f-ca06-4252-9014-aef0b4b375ac",
+      "location_id": "b43abe2c-74d6-4dc3-96e7-7e614d05f589",
+      "image_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/location-images/51aadb7c-4bca-4228-85d6-7bea93d3b3d1.jpg",
+      "sort_order": 4
+    }
+  ],
+  "institution_info": [
+    {
+      "id": "5f961585-681c-44ba-a72c-29b87f5c630d",
+      "name": " CƠ SƠ CAI NGHIỆN MA TÚY SỐ 3 - PHÂN KHU BỐ LÁ",
+      "slogan": null,
+      "description": "(có 02 vị trí, tên cũ cơ sở cai nghiện ma túy Bình Triệu và cơ sở cai nghiện ma túy Bố Lá). Quy mô 638 học viên; số học viên đang tiếp nhận 517 học viên; thời điểm cao nhất 1.359 học viên. Trong đó: Cơ sở tại số 65 Bình Lợi, phường Bình Lợi Trung; diện tích đất 7.300m2; các công trình được xây dựng từ năm 1976, qua nhiều lần cải tạo nay đã xuống cấp. Cơ sở tại Ấp Bố Lá xã Phước Hoà; diện tích đất 2,2 ha (thuộc Trại tạm giam Bố Lá); các công trình được đầu tư từ trước năm 2002",
+      "address": null,
+      "phone": null,
+      "email": null,
+      "website": null,
+      "logo_url": null,
+      "established_year": null,
+      "updated_at": "2026-09-14T05:17:23.688+00:00",
+      "campus_id": "a1f88f50-e7b0-48d0-8ad5-182c0ee7f4f6"
+    },
+    {
+      "id": "71ef8737-385a-41a0-948a-c2aa4a00d39d",
+      "name": "Cơ sở cai nghiện ma túy số 4 Thành phố Hồ Chí Minh",
+      "slogan": null,
+      "description": "Cơ sở cai nghiện ma túy số 4, địa chỉ Ấp Gia Biện, xã Phú Giáo (tên cũ Trung tâm cai nghiện số 4, Tam Lập, Phú Giáo, Bình Dương). Quy mô 1.200 học viên; số học viên đang tiếp nhận 1.006 học viên; thời điểm cao nhất 1.200 học viên. Diện tích đất 101,779ha, thực tế khoảng 98,144 ha, số còn lại đã xâm canh. Hiện trạng cơ sở có 02 khu, 01 khu được đầu tư xây dựng và đưa vào sử dụng tháng 4 năm 2025 với quy mô 750 học viên; 01 khu đầu tư từ trước năm 2002 hiện đã xuống cấp, không sử dụng\nKhoảng cách từ PC04 đến cơ sở (km): 85 KM\nTổng diện tích toàn cơ sở (m²/ha).\t101ha\nCông năng tối đa của toàn cơ sở: 750 học viên/người cai nghiện.\nHiện đang bố trí tổng cộng bao nhiêu học viên/người cai nghiện: 1226\nTổng số chỉ huy.\t06\nTổng số cán bộ.\t21\nTổng số HĐLĐ/lao động hợp đồng.\t56\n",
+      "address": "ấp Tam Lập, xã Phú Giáo, TPHCM",
+      "phone": null,
+      "email": null,
+      "website": null,
+      "logo_url": null,
+      "established_year": null,
+      "updated_at": "2026-09-14T05:17:56.823+00:00",
+      "campus_id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75"
+    },
+    {
+      "id": "e97b9109-b42a-404f-aefd-d0e944068a25",
+      "name": "CƠ SỞ CAI NGHIỆN SỐ 5 TP. HỒ CHÍ MINH",
+      "slogan": null,
+      "description": "Cơ sở cai nghiện ma túy số 5, địa chỉ Ấp 5, xã Phước Thành (tên cũ Trung tâm cai nghiện số 2, An Thái, Phú Giáo, Bình Dương). Quy mô 1.150 học viên; số học viên đang tiếp nhận 945 học viên; thời điểm cao nhất 1.927 học viên; diện tích đất 132,49 ha. Các công trình được đầu tư từ trước năm 2001, nay đã xuống cấp\nKhoảng cách từ PC04 đến cơ sở: 103Km\nTổng diện tích toàn cơ sở (m²/ha): 132,14 ha\nCông năng tối đa của toàn cơ sở: 800 học viên/người cai nghiện.\nHiện đang bố trí tổng cộng: 752 học viên/người cai nghiện.\nTổng số chỉ huy: 6\nTổng số cán bộ: 21\nTổng số HĐLĐ/lao động hợp đồng: 65\n",
+      "address": "ấp An Thái, xã Phước Thành, TPHCM ",
+      "phone": null,
+      "email": null,
+      "website": null,
+      "logo_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/institution/4f1bf664-485b-4612-9783-0b352f3f059f.png",
+      "established_year": null,
+      "updated_at": "2026-09-14T05:18:23.137+00:00",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599"
+    },
+    {
+      "id": "f8cf510f-e5a2-4a64-85c6-bd8f48e11368",
+      "name": "Cơ sở cai nghiện ma túy số 6 Thành phố Hồ Chí Minh",
+      "slogan": null,
+      "description": "Cơ sở cai nghiện ma túy số 6, địa chỉ Ấp Phú Thiện, xã Hoà Hiệp (tên cũ cơ sở cai nghiện ma túy tỉnh Bà Rịa - Vũng Tàu). Quy mô 1.500 học viên (Quy mô 740 học viên đầu tư xong năm 2024, quy mô 500 học viên đang thực hiện, dự kiến hoàn thành quý II/2026 và quy mô 260 học viên đầu tư từ năm 2004); đang tiếp nhận 1.649 học viên; thời điểm cao nhất 2.010 học viên. Diện tích đất 116 ha, trong đó: Đất sạch 110 ha, đất bị lấn chiếm 6 ha. Các hạng mục công trình, dự kiến hoàn thành quý II năm 2026 (nhà ở công vụ, nhà ăn cho CBCS; Khu điều trị cho người cai nghiện tự nguyện; Khu tiếp nhận ban đầu; Khu điều trị bệnh truyền nhiễm; Khu nhà kỷ luật.)\nTổng diện tích toàn cơ sở: 1.104.489,9 m² (khoảng 110 ha)\nCông năng tối đa của toàn cơ sở: theo thiết kế 1000 NCN (khả năng tối đa khoảng 2000 NCN). \nHiện đang quản lý 1510 học viên/người cai nghiện\nTổng số chỉ huy: 07 đồng chí\nTổng số cán bộ: 39 đồng chí\nTổng số HĐLĐ/lao động hợp đồng: 81 \n\n",
+      "address": "ấp Phú Thiện, xã Hòa Hiệp, TP.HCM",
+      "phone": null,
+      "email": null,
+      "website": null,
+      "logo_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/institution/6aee8c9a-b79c-4b85-9a3d-4acd24f4f5a9.png",
+      "established_year": null,
+      "updated_at": "2026-09-14T05:18:45.14+00:00",
+      "campus_id": "a4937b14-fd54-4f06-b622-491431cce674"
+    },
+    {
+      "id": "23e94c8b-dff0-432c-a316-30573785575e",
+      "name": "Cơ Sở Cai Nghiện Ma Túy Số 1",
+      "slogan": null,
+      "description": " Cơ sở cai nghiện ma túy số 1, địa chỉ 189E Đặng Công Bỉnh, xã Xuân Thới Sơn (tên cũ cơ sở cai nghiện ma túy Nhị Xuân). Quy mô 1.408 học viên; đang tiếp nhận 999 học viên; thời điểm cao nhất 2.200 học viên. Diện tích đất được bàn giao cho CATP 26,44 ha. Các công trình được đầu tư từ trước năm 2002",
+      "address": "189E Đặng Công Bỉnh, xã Xuân Thới Sơn, TP. Hồ Chí Minh",
+      "phone": null,
+      "email": null,
+      "website": null,
+      "logo_url": null,
+      "established_year": null,
+      "updated_at": "2026-09-14T05:15:52.773+00:00",
+      "campus_id": "8d47ac97-1b5c-44bd-bf59-de64e74611d4"
+    },
+    {
+      "id": "9544e8a4-6f79-43db-9e34-8b42a78c663c",
+      "name": "CƠ SỞ CAI NGHIỆN MA TÚY SỐ 2 ",
+      "slogan": null,
+      "description": "Cơ sở cai nghiện ma túy số 2, địa chỉ Ấp 3 xã Nhuận Đức (tên cũ cơ sở cai nghiện ma túy Thanh Thiếu Niên 2). Quy mô 628 học viên; đang tiếp nhận 576 học viên; thời điểm cao nhất 1.400 học viên. Diện tích đất: 17,32 ha. Các công trình được đầu tư từ trước năm 2002",
+      "address": "Ấp 3 xã Nhuận Đức ",
+      "phone": null,
+      "email": null,
+      "website": null,
+      "logo_url": null,
+      "established_year": null,
+      "updated_at": "2026-09-14T05:16:40.917+00:00",
+      "campus_id": "2d39d975-007c-425b-bf38-1457bc7119a1"
+    }
+  ],
+  "board_members": [
+    {
+      "id": "45fbb3aa-10b0-483c-b4c1-c45b209164a1",
+      "name": "Thượng tá Nguyễn Thanh Phong",
+      "title": "Trưởng Cơ sở",
+      "department": null,
+      "photo_url": null,
+      "bio": "Phụ trách chung",
+      "sort_order": 0,
+      "created_at": "2026-09-12T18:50:16.374604+00:00",
+      "member_type": "leader",
+      "campus_id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75"
+    },
+    {
+      "id": "aa9a2d30-2ba6-4512-a633-658d702702aa",
+      "name": "Trung tá Bạch Thiên Hoàng",
+      "title": "Phó Trưởng c�� sở",
+      "department": "Tài chính kế toán",
+      "photo_url": null,
+      "bio": null,
+      "sort_order": 1,
+      "created_at": "2026-09-12T18:50:47.630494+00:00",
+      "member_type": "leader",
+      "campus_id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75"
+    },
+    {
+      "id": "e494be3a-44bb-4a9f-bf14-9f7c7bb490a7",
+      "name": "Trung tá Hà Văn Thành",
+      "title": "Phó Trưởng cơ sở",
+      "department": "Phụ trách Y tế",
+      "photo_url": null,
+      "bio": null,
+      "sort_order": 2,
+      "created_at": "2026-09-12T18:51:24.109833+00:00",
+      "member_type": "leader",
+      "campus_id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75"
+    },
+    {
+      "id": "18a75e86-616e-4202-852a-49c4400e0653",
+      "name": "Thiếu tá Đào Vũ",
+      "title": "Phó Trưởng cơ sở",
+      "department": null,
+      "photo_url": null,
+      "bio": null,
+      "sort_order": 3,
+      "created_at": "2026-09-12T18:51:53.19694+00:00",
+      "member_type": "leader",
+      "campus_id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75"
+    },
+    {
+      "id": "2fb4b51e-6963-49d1-a85b-2b524a99f792",
+      "name": "Đại úy Nguyễn Minh Tâm",
+      "title": "Phó Trưởng cơ sở",
+      "department": "Phụ trách TMTH",
+      "photo_url": null,
+      "bio": null,
+      "sort_order": 4,
+      "created_at": "2026-09-12T18:52:10.941588+00:00",
+      "member_type": "leader",
+      "campus_id": "6a6a6f8c-6e2c-44ea-a1f0-22923843cb75"
+    },
+    {
+      "id": "233acb11-fb6c-4009-89e2-5f009e303e65",
+      "name": "Thượng tá Nguyễn Minh Hồng",
+      "title": "Trưởng cơ sở",
+      "department": "Phụ Trách Chung",
+      "photo_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/institution/fc685e88-fe77-4a8a-b718-2e498049cc74.jpg",
+      "bio": " SĐT Trưởng Cơ sở: 039 3999437",
+      "sort_order": 0,
+      "created_at": "2026-09-10T21:58:09.86906+00:00",
+      "member_type": "leader",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599"
+    },
+    {
+      "id": "2a5621ac-c263-4850-b7fc-b386a3869cf6",
+      "name": "Trung tá Nguyễn Thanh Hùng",
+      "title": "Phó Trưởng Cơ sở",
+      "department": "Phụ trách Tổ Tham mưu và Tổ người cai nghiện ma túy số 3 và 4",
+      "photo_url": null,
+      "bio": null,
+      "sort_order": 1,
+      "created_at": "2026-09-12T19:00:58.293497+00:00",
+      "member_type": "leader",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599"
+    },
+    {
+      "id": "6892acc6-8e3c-4539-b3aa-2eda4f9749f3",
+      "name": "Trung tá Trần Quan Thái",
+      "title": "Phó Trưởng Cơ sở",
+      "department": "Tổ Y tế và Tổ người cai nghiện 1, 2 và 5",
+      "photo_url": null,
+      "bio": null,
+      "sort_order": 2,
+      "created_at": "2026-09-12T19:01:41.543583+00:00",
+      "member_type": "leader",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599"
+    },
+    {
+      "id": "b877516a-d2d1-4fbf-b87c-eae3f43c6a67",
+      "name": "Trung tá Nguyễn Minh Lân",
+      "title": "Phó Trưởng Cơ sở",
+      "department": null,
+      "photo_url": null,
+      "bio": null,
+      "sort_order": 3,
+      "created_at": "2026-09-12T19:01:59.15+00:00",
+      "member_type": "leader",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599"
+    },
+    {
+      "id": "afaa213c-531b-45af-85a2-ee5369c1f1d8",
+      "name": "Trung tá Võ Thanh Lập",
+      "title": "Phó Trưởng Cơ sở",
+      "department": "Phụ trách Tổ Tham mưu về mảng tài chính hậu cần",
+      "photo_url": null,
+      "bio": null,
+      "sort_order": 4,
+      "created_at": "2026-09-12T19:02:15.762326+00:00",
+      "member_type": "leader",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599"
+    },
+    {
+      "id": "a6781a2a-3b2b-4327-92e7-2eaa510b3c19",
+      "name": "Thiếu tá Nguyễn Duy Đông",
+      "title": "Phó Trưởng Cơ sở",
+      "department": "Phụ trách mảng Quản lý người cai nghiện và tổ người cai nghiện số 6,7",
+      "photo_url": null,
+      "bio": null,
+      "sort_order": 5,
+      "created_at": "2026-09-12T19:02:33.096873+00:00",
+      "member_type": "leader",
+      "campus_id": "3e40e094-c116-4490-a59f-80c4eb557599"
+    },
+    {
+      "id": "753a8784-0fd7-4889-ba6e-415c087f1e2e",
+      "name": "Thượng tá Trần Huy Hải",
+      "title": "Trưởng cơ sở",
+      "department": "Phụ trách chung",
+      "photo_url": null,
+      "bio": null,
+      "sort_order": 0,
+      "created_at": "2026-09-14T04:02:27.986534+00:00",
+      "member_type": "leader",
+      "campus_id": "a4937b14-fd54-4f06-b622-491431cce674"
+    }
+  ],
+  "site_settings": [
+    {
+      "id": "07361a23-e13e-4f39-8770-0f8bb6bda78b",
+      "name": "CÁC CƠ SƠ CAI NGHIỆN TẠI TP. HỒ CHÍ MINH",
+      "subtitle": "THUỘC SỰ QUẢN LÝ CỦA PHÒNG PC04",
+      "logo_url": "https://ghcatqoczarmetojcpok.supabase.co/storage/v1/object/public/institution/648be358-1289-449d-a821-b0bd4ada5190.png",
+      "updated_at": "2026-09-11T17:06:28.467+00:00",
+      "logo_height": 52
+    }
+  ]
+}

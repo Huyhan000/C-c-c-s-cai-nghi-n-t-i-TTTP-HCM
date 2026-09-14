@@ -102,6 +102,30 @@ export const CampusLeafletMap: React.FC<CampusLeafletMapProps> = ({
     }
   }, [campus.image_height, campus.image_width]);
 
+  // Center camera on a specific location on-demand
+  const handleCenterOnLocation = useCallback(
+    (locId: string) => {
+      if (!mapInstanceRef.current) return;
+      const loc = locations.find((l) => l.id === locId);
+      if (!loc) return;
+
+      const center: [number, number] =
+        loc.polygon && loc.polygon.length >= 3
+          ? computePolygonCenter(loc.polygon, campus.image_height) ||
+            toLeafletCoord(loc.pos_x, loc.pos_y, campus.image_height)
+          : toLeafletCoord(loc.pos_x, loc.pos_y, campus.image_height);
+
+      const bounds = L.latLngBounds([0, 0], [campus.image_height, campus.image_width]);
+      const fitZoom = mapInstanceRef.current.getBoundsZoom(bounds, false);
+      const targetZoom = Math.min(fitZoom + 0.6, 1.8);
+
+      mapInstanceRef.current.flyTo(center, targetZoom, {
+        duration: 0.5,
+      });
+    },
+    [locations, campus.image_height, campus.image_width]
+  );
+
   // Zoom controls
   const handleZoomIn = () => mapInstanceRef.current?.zoomIn();
   const handleZoomOut = () => mapInstanceRef.current?.zoomOut();
@@ -171,7 +195,8 @@ export const CampusLeafletMap: React.FC<CampusLeafletMapProps> = ({
     // Observe container resizes (e.g. sidebar open/close, mobile orientation change)
     const resizeObserver = new ResizeObserver(() => {
       if (!mapInstanceRef.current) return;
-      mapInstanceRef.current.invalidateSize();
+      // Use pan: false so container resizing does not forcefully shift map center!
+      mapInstanceRef.current.invalidateSize({ pan: false });
       const currentBounds = L.latLngBounds([0, 0], [campus.image_height, campus.image_width]);
       const currentFitZoom = mapInstanceRef.current.getBoundsZoom(currentBounds, false);
       mapInstanceRef.current.setMinZoom(currentFitZoom);
@@ -228,14 +253,15 @@ export const CampusLeafletMap: React.FC<CampusLeafletMapProps> = ({
     polygonLayersMapRef.current.clear();
     markerLayersMapRef.current.clear();
 
-    const visibleLocs = locations.filter((loc) => activeCategoryIds.includes(loc.category_id));
+    const visibleLocs = locations.filter((loc) => !loc.category_id || activeCategoryIds.includes(loc.category_id));
 
     visibleLocs.forEach((loc) => {
       const cat = categoryMap.get(loc.category_id);
-      const color = cat?.color || '#10b981';
+      const color = cat?.color || '#ff0000';
       const isSelected = loc.id === selectedLocationIdRef.current;
       const images = getLocationImages(loc.id);
       const coverImage = images[0]?.image_url;
+      const displayNumText = loc.display_number != null ? loc.display_number : '•';
 
       // Has polygon definition
       if (loc.polygon && loc.polygon.length >= 3) {
@@ -262,7 +288,7 @@ export const CampusLeafletMap: React.FC<CampusLeafletMapProps> = ({
             }
             <div class="flex items-center gap-2 mb-1.5">
               <span class="inline-flex items-center justify-center w-6 h-6 rounded-full text-[11px] font-black text-white shadow" style="background-color: ${color}">
-                ${loc.display_number}
+                ${displayNumText}
               </span>
               <strong class="text-xs font-bold text-white truncate flex-1">${loc.name}</strong>
             </div>
@@ -314,7 +340,11 @@ export const CampusLeafletMap: React.FC<CampusLeafletMapProps> = ({
 
         polygon.on('click', (e) => {
           L.DomEvent.stopPropagation(e);
-          onSelectLocation(loc.id);
+          if (loc.id === selectedLocationIdRef.current) {
+            handleCenterOnLocation(loc.id);
+          } else {
+            onSelectLocation(loc.id);
+          }
         });
 
         polygon.addTo(layerGroup);
@@ -336,7 +366,7 @@ export const CampusLeafletMap: React.FC<CampusLeafletMapProps> = ({
             }"
             style="background-color: ${color};"
           >
-            ${loc.display_number}
+            ${displayNumText}
           </div>
           ${
             images.length > 0
@@ -359,7 +389,11 @@ export const CampusLeafletMap: React.FC<CampusLeafletMapProps> = ({
 
       marker.on('click', (e) => {
         L.DomEvent.stopPropagation(e);
-        onSelectLocation(loc.id);
+        if (loc.id === selectedLocationIdRef.current) {
+          handleCenterOnLocation(loc.id);
+        } else {
+          onSelectLocation(loc.id);
+        }
       });
 
       marker.on('mouseover', () => onHoverLocation(loc.id));
@@ -455,27 +489,24 @@ export const CampusLeafletMap: React.FC<CampusLeafletMapProps> = ({
 
 
   // Center on Selected Location with contextual zoom (gentle, not over-zooming)
+  // CRITICAL: ONLY flies to location ONCE when a new location is selected.
+  // NEVER auto-zooms or snaps back when user freely zooms, moves/pans, or views photos!
+  const lastCenteredLocationIdRef = useRef<string | null>(null);
+
   useEffect(() => {
-    if (!selectedLocationId || !mapInstanceRef.current) return;
-    const loc = locations.find((l) => l.id === selectedLocationId);
-    if (!loc) return;
+    if (!selectedLocationId) {
+      lastCenteredLocationIdRef.current = null;
+      return;
+    }
 
-    const center: [number, number] =
-      loc.polygon && loc.polygon.length >= 3
-        ? computePolygonCenter(loc.polygon, campus.image_height) ||
-          toLeafletCoord(loc.pos_x, loc.pos_y, campus.image_height)
-        : toLeafletCoord(loc.pos_x, loc.pos_y, campus.image_height);
+    // Already centered on this location! Do NOT re-center or override user's manual zoom/pan!
+    if (selectedLocationId === lastCenteredLocationIdRef.current) {
+      return;
+    }
 
-    const bounds = L.latLngBounds([0, 0], [campus.image_height, campus.image_width]);
-    const fitZoom = mapInstanceRef.current.getBoundsZoom(bounds, false);
-
-    // Zoom slightly in (e.g. +0.5 to +0.8 above fitZoom) so surroundings are still clear
-    const targetZoom = Math.min(fitZoom + 0.6, 1.8);
-
-    mapInstanceRef.current.flyTo(center, targetZoom, {
-      duration: 0.5,
-    });
-  }, [selectedLocationId, locations, campus.image_height, campus.image_width]);
+    lastCenteredLocationIdRef.current = selectedLocationId;
+    handleCenterOnLocation(selectedLocationId);
+  }, [selectedLocationId, handleCenterOnLocation]);
 
   const activeLoc = locations.find((l) => l.id === selectedLocationId);
 
@@ -489,12 +520,18 @@ export const CampusLeafletMap: React.FC<CampusLeafletMapProps> = ({
         {/* If an area is selected: Prominent Back / Zoom Out button */}
         {activeLoc ? (
           <div className="flex items-center gap-1.5 rounded-xl border border-emerald-500/70 bg-slate-950/90 p-1.5 text-xs text-white shadow-2xl backdrop-blur-md">
-            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-600 font-bold text-xs text-white">
-              {activeLoc.display_number}
-            </span>
-            <span className="max-w-[140px] sm:max-w-[200px] truncate font-bold text-slate-100 px-1">
-              {activeLoc.name}
-            </span>
+            <button
+              onClick={() => handleCenterOnLocation(activeLoc.id)}
+              className="flex items-center gap-1.5 rounded-lg bg-emerald-950/70 hover:bg-emerald-900/90 px-2 py-1 text-slate-100 font-bold transition-colors cursor-pointer"
+              title="Nhấp để định vị lại khu vực này trên bản đồ"
+            >
+              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-600 font-bold text-xs text-white">
+                {activeLoc.display_number}
+              </span>
+              <span className="max-w-[140px] sm:max-w-[200px] truncate font-bold text-slate-100 px-0.5">
+                {activeLoc.name}
+              </span>
+            </button>
             <button
               onClick={() => {
                 onSelectLocation(null);

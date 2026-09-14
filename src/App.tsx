@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useCampusStore } from './data/campusStore';
 import { CampusHeader } from './components/campus/CampusHeader';
 import { CampusSidebar } from './components/campus/CampusSidebar';
@@ -34,10 +34,12 @@ export default function App() {
     loginAdmin,
     logoutAdmin,
     addLocationImage,
+    replaceLocationImage,
     deleteLocationImage,
     setCoverImage,
     updateLocation,
     resetToDefault,
+    syncWithRemoteServer,
     exportData,
     importData,
     getLocationImages,
@@ -55,6 +57,24 @@ export default function App() {
   const [isAdminLoginOpen, setIsAdminLoginOpen] = useState(false);
   const [isInfoModalOpen, setIsInfoModalOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const [syncToast, setSyncToast] = useState<{ message: string; isError?: boolean } | null>(null);
+
+  // Sync with remote server (campus-map-pc-04.vercel.app)
+  const handleSyncRemote = async () => {
+    setSyncToast({ message: 'Đang kết nối và đồng bộ dữ liệu hình ảnh từ máy chủ...' });
+    const result = await syncWithRemoteServer();
+    setSyncToast({ message: result.message, isError: !result.success });
+    setTimeout(() => {
+      setSyncToast(null);
+    }, 4500);
+  };
+
+  // Auto-sync in background on initial load to ensure latest data from server
+  useEffect(() => {
+    syncWithRemoteServer().catch((err) => {
+      console.warn('Background auto-sync on load skipped:', err);
+    });
+  }, [syncWithRemoteServer]);
 
   // Institution info & board members for current campus
   const currentInstitution = institutionInfo.find((i) => i.campus_id === selectedCampusId);
@@ -125,12 +145,24 @@ export default function App() {
         onOpenAdminLogin={() => setIsAdminLoginOpen(true)}
         onLogoutAdmin={logoutAdmin}
         onResetDefault={handleReset}
+        onSyncRemote={handleSyncRemote}
         onExportData={handleExport}
         onImportData={handleImport}
         onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
         isSidebarOpen={isSidebarOpen}
         siteSetting={siteSettings}
       />
+
+      {/* Sync Toast Notification */}
+      {syncToast && (
+        <div className={`fixed top-16 right-4 z-[9999] flex items-center gap-2.5 rounded-xl px-4 py-2.5 text-xs font-bold shadow-2xl backdrop-blur-md animate-in fade-in slide-in-from-top-2 duration-200 border ${
+          syncToast.isError 
+            ? 'bg-rose-950/90 text-rose-200 border-rose-600/60 shadow-rose-950/50' 
+            : 'bg-emerald-950/90 text-emerald-200 border-emerald-500/60 shadow-emerald-950/50'
+        }`}>
+          <span>{syncToast.message}</span>
+        </div>
+      )}
 
       {/* Main Workspace: Sidebar + Leaflet Master Map + Detail Drawer */}
       <div className="relative flex min-h-0 flex-1 overflow-hidden">
@@ -249,6 +281,7 @@ export default function App() {
           isOpen={isAdminModalOpen}
           onClose={() => setIsAdminModalOpen(false)}
           onAddImage={addLocationImage}
+          onReplaceImage={replaceLocationImage}
           onDeleteImage={deleteLocationImage}
           onSetCoverImage={setCoverImage}
           onUpdateLocation={updateLocation}

@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
 import { 
   Campus, 
   Category, 
@@ -10,9 +10,13 @@ import {
 } from '../types/campus';
 import { DEFAULT_CAMPUS_DATA } from './defaultCampusData';
 
-const STORAGE_KEY = 'campus_map_data_v1';
+const STORAGE_KEY = 'campus_map_data_v3';
+const LEGACY_STORAGE_KEYS = ['campus_map_data_v2', 'campus_map_data_v1'];
 const ADMIN_SESSION_KEY = 'campus_map_admin_auth';
 const DEFAULT_ADMIN_PASSWORD = 'admin';
+
+const SUPABASE_REST_URL = 'https://ghcatqoczarmetojcpok.supabase.co/rest/v1';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdoY2F0cW9jemFybWV0b2pjcG9rIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODkwNjEyMzAsImV4cCI6MjEwNDYzNzIzMH0.shJ5MTeQ4fXQBAVrVPAeyoJWfNj8Lvx3HeYFIOYXeIM';
 
 export function sortCampuses(campuses: Campus[]): Campus[] {
   return [...campuses].sort((a, b) => {
@@ -29,11 +33,61 @@ function loadInitialDatabase(): CampusDatabase {
   let db: CampusDatabase = DEFAULT_CAMPUS_DATA;
   if (typeof window !== 'undefined') {
     try {
-      const raw = localStorage.getItem(STORAGE_KEY);
+      let raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) {
+        for (const legKey of LEGACY_STORAGE_KEYS) {
+          const legRaw = localStorage.getItem(legKey);
+          if (legRaw) {
+            raw = legRaw;
+            break;
+          }
+        }
+      }
+
       if (raw) {
         const parsed = JSON.parse(raw);
         if (parsed && Array.isArray(parsed.campuses) && Array.isArray(parsed.locations)) {
-          db = parsed;
+          // If stored data is missing any of the official locations or images from DEFAULT_CAMPUS_DATA, merge them in
+          const parsedLocMap = new Map<string, any>(parsed.locations.map((l: any) => [l.id, l]));
+          // Keep user custom added locations ('loc-') and update existing official locations with new official data
+          const mergedLocations: LocationItem[] = DEFAULT_CAMPUS_DATA.locations.map((defLoc) => {
+            const userLoc = parsedLocMap.get(defLoc.id) as any;
+            if (userLoc) {
+              return {
+                ...defLoc,
+                // keep user custom edited fields if set
+                ...userLoc,
+                // ensure latest valid coordinates, polygon, and display_number
+                polygon: defLoc.polygon || userLoc.polygon,
+                pos_x: defLoc.pos_x ?? userLoc.pos_x,
+                pos_y: defLoc.pos_y ?? userLoc.pos_y,
+                category_id: userLoc.category_id || defLoc.category_id,
+                display_number: userLoc.display_number ?? defLoc.display_number,
+              };
+            }
+            return defLoc;
+          });
+
+          // Add any custom locations created by user
+          parsed.locations.forEach((l: any) => {
+            if (l.id.startsWith('loc-')) {
+              mergedLocations.push(l);
+            }
+          });
+
+          const existingImgIds = new Set((parsed.location_images || []).map((i: any) => i.id));
+          const missingImgs = DEFAULT_CAMPUS_DATA.location_images.filter((i) => !existingImgIds.has(i.id));
+
+          db = {
+            ...parsed,
+            campuses: sortCampuses(DEFAULT_CAMPUS_DATA.campuses),
+            categories: DEFAULT_CAMPUS_DATA.categories,
+            locations: mergedLocations,
+            location_images: [...(parsed.location_images || []), ...missingImgs],
+            institution_info: DEFAULT_CAMPUS_DATA.institution_info || parsed.institution_info,
+            board_members: DEFAULT_CAMPUS_DATA.board_members || parsed.board_members,
+          };
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(db));
         }
       }
     } catch (err) {
@@ -157,6 +211,23 @@ export function useCampusStore() {
     };
     notifyListeners();
     return newImage;
+  }, []);
+
+  const replaceLocationImage = useCallback((imageId: string, newImageUrl: string, newTitle?: string) => {
+    globalDb = {
+      ...globalDb,
+      location_images: globalDb.location_images.map((img) => {
+        if (img.id === imageId) {
+          return {
+            ...img,
+            image_url: newImageUrl,
+            title: newTitle !== undefined ? newTitle : img.title,
+          };
+        }
+        return img;
+      }),
+    };
+    notifyListeners();
   }, []);
 
   const deleteLocationImage = useCallback((imageId: string) => {
@@ -289,10 +360,22 @@ export function useCampusStore() {
     return false;
   }, []);
 
-  const currentCampus = db.campuses.find((c) => c.id === selectedCampusId) || db.campuses[0];
-  const campusLocations = db.locations.filter((l) => l.campus_id === selectedCampusId);
-  const selectedLocation = db.locations.find((l) => l.id === selectedLocationId) || null;
-  const hoveredLocation = db.locations.find((l) => l.id === hoveredLocationId) || null;
+  const currentCampus = useMemo(
+    () => db.campuses.find((c) => c.id === selectedCampusId) || db.campuses[0],
+    [db.campuses, selectedCampusId]
+  );
+  const campusLocations = useMemo(
+    () => db.locations.filter((l) => l.campus_id === selectedCampusId),
+    [db.locations, selectedCampusId]
+  );
+  const selectedLocation = useMemo(
+    () => db.locations.find((l) => l.id === selectedLocationId) || null,
+    [db.locations, selectedLocationId]
+  );
+  const hoveredLocation = useMemo(
+    () => db.locations.find((l) => l.id === hoveredLocationId) || null,
+    [db.locations, hoveredLocationId]
+  );
 
   const getLocationImages = useCallback(
     (locationId: string): LocationImage[] => {
@@ -302,6 +385,87 @@ export function useCampusStore() {
     },
     [db.location_images]
   );
+
+  const syncWithRemoteServer = useCallback(async (): Promise<{
+    success: boolean;
+    message: string;
+    newImagesCount?: number;
+    totalImages?: number;
+  }> => {
+    try {
+      const headers = {
+        apikey: SUPABASE_ANON_KEY,
+        Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+      };
+
+      const [campusesRes, categoriesRes, locationsRes, imagesRes, infoRes, boardRes] = await Promise.all([
+        fetch(`${SUPABASE_REST_URL}/campuses?select=*&limit=100`, { headers }),
+        fetch(`${SUPABASE_REST_URL}/categories?select=*&limit=100`, { headers }),
+        fetch(`${SUPABASE_REST_URL}/locations?select=*&limit=1000`, { headers }),
+        fetch(`${SUPABASE_REST_URL}/location_images?select=*&limit=2000`, { headers }),
+        fetch(`${SUPABASE_REST_URL}/institution_info?select=*&limit=100`, { headers }),
+        fetch(`${SUPABASE_REST_URL}/board_members?select=*&limit=100`, { headers }),
+      ]);
+
+      if (!locationsRes.ok || !imagesRes.ok) {
+        throw new Error('Không thể kết nối đến máy chủ cơ sở dữ liệu.');
+      }
+
+      const [campuses, categories, locations, location_images, institution_info, board_members] = await Promise.all([
+        campusesRes.json(),
+        categoriesRes.json(),
+        locationsRes.json(),
+        imagesRes.json(),
+        infoRes.json(),
+        boardRes.json(),
+      ]);
+
+      // Normalize locations (assign default category if missing and ensure valid display_number)
+      const defaultCatId = categories.find((c: any) => c.name.includes('Các khu'))?.id || categories[0]?.id;
+      const normalizedLocations = locations.map((loc: any, idx: number) => ({
+        ...loc,
+        category_id: loc.category_id || defaultCatId,
+        display_number: loc.display_number != null ? loc.display_number : idx + 1,
+      }));
+
+      // Preserve user custom additions (ids starting with 'loc-' or 'img-')
+      const customLocations = globalDb.locations.filter((l) => l.id.startsWith('loc-'));
+      const customImages = globalDb.location_images.filter((img) => img.id.startsWith('img-'));
+
+      const mergedLocations = [...normalizedLocations, ...customLocations];
+      const mergedImages = [...location_images, ...customImages];
+
+      const beforeImgCount = globalDb.location_images.length;
+      globalDb = {
+        ...globalDb,
+        campuses: sortCampuses(campuses),
+        categories,
+        locations: mergedLocations,
+        location_images: mergedImages,
+        institution_info: institution_info.length > 0 ? institution_info : globalDb.institution_info,
+        board_members: board_members.length > 0 ? board_members : globalDb.board_members,
+      };
+
+      if (typeof window !== 'undefined') {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(globalDb));
+      }
+
+      notifyListeners();
+      const diff = mergedImages.length - beforeImgCount;
+      return {
+        success: true,
+        message: `Đã đồng bộ thành công! Hiện có ${mergedImages.length} ảnh và ${mergedLocations.length} khu vực.`,
+        newImagesCount: diff > 0 ? diff : 0,
+        totalImages: mergedImages.length,
+      };
+    } catch (err: any) {
+      console.error('Remote sync failed:', err);
+      return {
+        success: false,
+        message: err?.message || 'Đồng bộ thất bại, vui lòng kiểm tra kết nối mạng.',
+      };
+    }
+  }, []);
 
   return {
     db,
@@ -329,6 +493,7 @@ export function useCampusStore() {
     loginAdmin,
     logoutAdmin,
     addLocationImage,
+    replaceLocationImage,
     deleteLocationImage,
     setCoverImage,
     reorderImages,
@@ -336,6 +501,7 @@ export function useCampusStore() {
     addLocation,
     deleteLocation,
     resetToDefault,
+    syncWithRemoteServer,
     exportData,
     importData,
     getLocationImages,

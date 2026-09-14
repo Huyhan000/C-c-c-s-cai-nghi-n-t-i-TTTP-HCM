@@ -124,7 +124,7 @@ export const AreaDetailDrawer: React.FC<AreaDetailDrawerProps> = ({
         {/* Title & Category Overview */}
         <div className="rounded-2xl border border-emerald-900/50 bg-emerald-950/40 p-3.5">
           <div className="flex items-center justify-between text-[11px] text-emerald-400 font-semibold mb-1">
-            <span>PHÂN KHU SỐ {location.display_number}</span>
+            <span>{location.display_number != null ? `PHÂN KHU SỐ ${location.display_number}` : 'KHU VỰC CHỨC NĂNG'}</span>
             <span className="flex items-center gap-1 text-slate-400">
               <MapPin className="h-3 w-3 text-emerald-400" />
               <span>Tọa độ ({Math.round(location.pos_x)}, {Math.round(location.pos_y)})</span>
@@ -232,14 +232,40 @@ export const AreaDetailDrawer: React.FC<AreaDetailDrawerProps> = ({
         </div>
 
         {/* Function & Description Section */}
-        <div className="rounded-2xl border border-emerald-900/50 bg-emerald-950/30 p-3.5 space-y-1.5">
-          <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-300">
-            <Building className="h-3.5 w-3.5 text-emerald-400" />
-            <span>Chức Năng & Nhiệm Vụ Hoạt Động</span>
+        <div className="rounded-2xl border border-emerald-900/50 bg-emerald-950/30 p-3.5 space-y-2">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-300">
+              <Building className="h-3.5 w-3.5 text-emerald-400" />
+              <span>Chức Năng & Nhiệm Vụ Hoạt Động</span>
+            </div>
+            {isAdmin && (
+              <button
+                onClick={onOpenAdminEdit}
+                className="text-[11px] font-semibold text-emerald-400 hover:text-emerald-200 underline"
+              >
+                Chỉnh sửa
+              </button>
+            )}
           </div>
-          <p className="text-xs text-slate-200 leading-relaxed whitespace-pre-wrap">
-            {location.description || 'Chưa có thông tin mô tả chi tiết chức năng cho khu vực này.'}
-          </p>
+          {location.description ? (
+            <div className="text-xs text-slate-200 leading-relaxed whitespace-pre-line space-y-1.5 bg-black/20 p-2.5 rounded-xl border border-emerald-900/40">
+              {location.description}
+            </div>
+          ) : (
+            <div className="rounded-xl border border-dashed border-emerald-800/60 bg-emerald-950/20 p-3 text-center">
+              <p className="text-xs text-slate-400 italic">
+                Chưa có thông tin mô tả chi tiết chức năng cho khu vực này.
+              </p>
+              {isAdmin && (
+                <button
+                  onClick={onOpenAdminEdit}
+                  className="mt-1.5 text-[11px] font-bold text-emerald-400 hover:text-emerald-300 underline"
+                >
+                  + Thêm mô tả chức năng
+                </button>
+              )}
+            </div>
+          )}
         </div>
 
         {/* Technical Specifications (Bento-style Grid) */}

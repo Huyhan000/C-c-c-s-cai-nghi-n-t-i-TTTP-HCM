@@ -74,17 +74,19 @@ export const CampusSidebar: React.FC<CampusSidebarProps> = ({
 
   // Filter locations by search and active category layers
   const visibleLocations = locations
-    .filter((loc) => activeCategoryIds.includes(loc.category_id))
+    .filter((loc) => !loc.category_id || activeCategoryIds.includes(loc.category_id))
     .filter((loc) => {
       if (!search.trim()) return true;
-      const q = search.toLowerCase();
+      const q = search.toLowerCase().trim();
+      const numStr = (loc.display_number ?? '').toString();
       return (
         loc.name.toLowerCase().includes(q) ||
-        loc.display_number.toString() === q ||
+        numStr === q ||
+        numStr.includes(q) ||
         (loc.description && loc.description.toLowerCase().includes(q))
       );
     })
-    .sort((a, b) => a.display_number - b.display_number);
+    .sort((a, b) => (a.display_number ?? 999) - (b.display_number ?? 999));
 
   if (!isOpen) return null;
 
@@ -227,15 +229,17 @@ export const CampusSidebar: React.FC<CampusSidebarProps> = ({
                             className="flex h-full w-full items-center justify-center font-bold text-white text-xs"
                             style={{ backgroundColor: cat?.color || '#059669' }}
                           >
-                            #{loc.display_number}
+                            {loc.display_number != null ? `#${loc.display_number}` : '•'}
                           </div>
                         )}
-                        <span
-                          className="absolute bottom-0.5 right-0.5 flex h-4.5 w-4.5 items-center justify-center rounded-full text-[9.5px] font-black text-white shadow"
-                          style={{ backgroundColor: cat?.color || '#059669' }}
-                        >
-                          {loc.display_number}
-                        </span>
+                        {loc.display_number != null && (
+                          <span
+                            className="absolute bottom-0.5 right-0.5 flex h-4.5 w-4.5 items-center justify-center rounded-full text-[9.5px] font-black text-white shadow"
+                            style={{ backgroundColor: cat?.color || '#059669' }}
+                          >
+                            {loc.display_number}
+                          </span>
+                        )}
                       </div>
 
                       {/* Info */}

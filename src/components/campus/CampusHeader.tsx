@@ -9,6 +9,7 @@ import {
   Download,
   Upload,
   RotateCcw,
+  RefreshCw,
   Check,
   ChevronDown,
   ShieldAlert,
@@ -28,6 +29,7 @@ interface CampusHeaderProps {
   onOpenAdminLogin: () => void;
   onLogoutAdmin: () => void;
   onResetDefault: () => void;
+  onSyncRemote?: () => void;
   onExportData: () => void;
   onImportData: () => void;
   onToggleSidebar?: () => void;
@@ -48,6 +50,7 @@ export const CampusHeader: React.FC<CampusHeaderProps> = ({
   onOpenAdminLogin,
   onLogoutAdmin,
   onResetDefault,
+  onSyncRemote,
   onExportData,
   onImportData,
   onToggleSidebar,
@@ -231,6 +234,16 @@ export const CampusHeader: React.FC<CampusHeaderProps> = ({
                 <div className="border-b border-slate-800 px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-emerald-400">
                   Quyền Quản Trị
                 </div>
+                {onSyncRemote && (
+                  <button
+                    onClick={onSyncRemote}
+                    className="flex w-full items-center gap-2 rounded-lg px-2.5 py-2 text-left text-xs text-emerald-300 font-semibold hover:bg-emerald-900/50"
+                    title="Cập nhật hình ảnh và dữ liệu mới nhất từ website campus-map-pc-04"
+                  >
+                    <RefreshCw className="h-4 w-4 text-emerald-400" />
+                    <span>Đồng bộ từ máy chủ web</span>
+                  </button>
+                )}
                 <button
                   onClick={onExportData}
                   className="flex w-full items-center gap-2 rounded-lg px-2.5 py-2 text-left text-xs text-slate-200 hover:bg-emerald-900/40"
